@@ -10,6 +10,6 @@
 		Che succede ora?...stay tuned!<br/>
 		    <g:TextArea ui:field="content"></g:TextArea><br />
 		
-		<g:Button styleName="{style.important}" ui:field="button">Clicccami</g:Button>
+		<g:Button styleName="{style.important}" ui:field="tweet">tweet</g:Button>
 	</g:HTMLPanel>
 </ui:UiBinder> 

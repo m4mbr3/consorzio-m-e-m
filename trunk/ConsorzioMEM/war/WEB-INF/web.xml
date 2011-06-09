@@ -52,13 +52,13 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     
-    <!--
+    
     <servlet>
         <servlet-name>GWTServiceServlet</servlet-name>
         <servlet-class>org.slim3.gwt.server.rpc.GWTServiceServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
-    -->
+   
 
     <servlet>
         <servlet-name>KtrWjrServiceServlet</servlet-name>
