@@ -1,5 +1,9 @@
 package consorzio.client.service;
 
+import java.util.List;
+
+import consorzio.shared.model.Tweet;
+
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
@@ -7,4 +11,6 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 public interface TwitterService extends RemoteService {
 
     void tweet(String content);
+    List<Tweet> getTweetList();
+
 }

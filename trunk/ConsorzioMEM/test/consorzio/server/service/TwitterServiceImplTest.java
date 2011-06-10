@@ -3,6 +3,7 @@ package consorzio.server.service;
 import org.slim3.tester.ServletTestCase;
 import org.slim3.datastore.Datastore;
 import org.junit.Test;
+import java.util.List;
 
 import consorzio.shared.model.Tweet;
 import static org.junit.Assert.*;
@@ -24,6 +25,16 @@ public class TwitterServiceImplTest extends ServletTestCase {
         Tweet tweet = Datastore.query(Tweet.class).asSingle();
         assertThat(tweet, is(notNullValue()));
         assertThat(tweet.getContent(), is("Hello"));
+    }
+    
+    @Test
+    public void getTweetList() throws Exception {
+        Tweet tweet = new Tweet();
+        tweet.setContent("Hello");
+        Datastore.put(tweet);
+        List<Tweet> tweetList = service.getTweetList();
+        assertThat(tweetList.size(), is(1));
+        assertThat(tweetList.get(0).getContent(), is("Hello"));
     }
 }
     

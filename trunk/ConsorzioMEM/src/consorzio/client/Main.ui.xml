@@ -8,8 +8,9 @@
 	</ui:style>
 	<g:HTMLPanel>
 		Che succede ora?...stay tuned!<br/>
-		    <g:TextArea ui:field="content"></g:TextArea><br />
-		
-		<g:Button styleName="{style.important}" ui:field="tweet">tweet</g:Button>
+		<g:TextArea ui:field="content"></g:TextArea><br />
+		<g:Button ui:field="tweet">tweet</g:Button>
+		<g:Button ui:field="refresh">Refresh</g:Button><br />
+   	 	<g:FlexTable ui:field="table"></g:FlexTable>
 	</g:HTMLPanel>
 </ui:UiBinder> 
