@@ -1,4 +1,7 @@
-<!doctype html>
+<%@page pageEncoding="UTF-8" isELIgnored="false" session="false"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@taglib prefix="f" uri="http://www.slim3.org/functions"%>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -21,22 +24,30 @@
       <li><a href="#">Collegamento tre</a></li>
       <li><a href="#">Collegamento quattro</a></li>
     </ul>
-   <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' 	style="position:absolute;width:0;height:0;border:0"> <p> I collegamenti qui sopra mostrano una struttura di navigazione di base mediante un elenco non ordinato con stili CSS. Utilizzate questa struttura come punto di partenza e modificate le proprietà per produrre un look personalizzato. Se vi servono dei menu flyout, createli utilizzando un menu Spry, un menu widget di Adobe Exchange o una varietà di altre soluzioni javascript o CSS.</p>    </iframe>
-   
+  <p> I collegamenti qui sopra mostrano una struttura di navigazione di base mediante un elenco non ordinato con stili CSS. Utilizzate questa struttura come punto di partenza e modificate le proprietÃ  per produrre un look personalizzato. Se vi servono dei menu flyout, createli utilizzando un menu Spry, un menu widget di Adobe Exchange o una varietÃ  di altre soluzioni javascript o CSS.</p>  
+   <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' 	style="position:absolute;width:0;height:0;border:0">    </iframe>
     <p>Se volete posizionare l'area di navigazione in alto, dovete semplicemente spostare il ul.nav nella parte superiore della pagina e ricreare gli stili.</p>
     <!-- end .sidebar1 --></div>
   <div class="content">
-    <h1>Istruzioni</h1>
-    <p>Tenete presente che il codice CSS di questi layout contiene molti commenti. Se solitamente lavorate nella vista Progettazione, visualizzate almeno momentaneamente la vista Codice per consultare i suggerimenti sull'uso del codice CSS nei layout fissi. Potete rimuovere questi commenti prima di lanciare il sito. Per saperne di più sulle tecniche utilizzate in questi layout CSS, leggete questo articolo sul Centro per gli sviluppatori Adobe - <a href="http://www.adobe.com/go/adc_css_layouts">http://www.adobe.com/go/adc_css_layouts</a>.
-     <h2>Metodo di clearing</h2>
-    <p>Poiché tutte le colonne sono con float, questo layout utilizza una dichiarazione clear:both nella regola .footer. Questa tecnica di clearing obbliga il .container a capire dove terminano le colonne per fare apparire i bordi o i colori di bordo che applicate al .container. Se il vostro design richiede la rimozione di .footer dal .container, dovete utilizzare un metodo di clearing differente. Quello più affidabile prevede l'aggiunta di un &lt;br class=&quot;clearfloat&quot; /&gt; o &lt;div  class=&quot;clearfloat&quot;&gt;&lt;/div&gt; dopo l'ultima colonna con float (ma prima della chiusura del .container). L'effetto di clearing sarà lo stesso.</p>
-    <h3>Sostituzione logo</h3>
-    <p>In questo layout è stata utilizzata un'immagine segnaposto nell'area .header, nel punto in cui probabilmente inserirete un logo. Si consiglia di rimuovere il segnaposto e sostituirlo con il vostro logo collegato. </p>
-    <p> Tenete presente che se utilizzate la finestra di ispezione Proprietà per accedere all'immagine del logo utilizzando il campo Orig. (anziché rimuovere e sostituire il segnaposto), dovrete rimuovere le proprietà di visualizzazione e sfondo in linea. Questi stili in linea vengono utilizzati solo per fare apparire il segnaposto del logo nei browser a scopo di dimostrazione. </p>
-    <p>Per rimuovere gli stili, controllate che il pannello Stili CSS sia visualizzato nella versione Corrente. Selezionate l'immagine e, nel riquadro Proprietà del pannello Stili CSS, fate clic con il pulsante destro ed eliminate le proprietà di visualizzazione e sfondo (display e background). (Naturalmente potete sempre accedere direttamente al codice ed eliminare manualmente gli stili in linea dall'immagine o dal segnaposto.)</p>
-    <h4>Sfondi</h4>
-    <p>Normalmente, il colore di sfondo di un div viene visualizzato solo per tutta la lunghezza del contenuto. Ciò significa che se state utilizzando un colore di sfondo o un bordo per creare l'aspetto di una colonna laterale, questa non si estenderà fino al piè di pagina bensì si fermerà alla fine del contenuto. Se il div .content includerà sempre altro contenuto, potete inserire un bordo nel div .content per dividerlo dalla colonna.</p>
-    <!-- end .content --></div>
+   <h3>The standard Lorem Ipsum passage, used since the 1500s </h3>
+
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+<h3>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
+
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+
+<h3>1914 translation by H. Rackham</h3>
+
+"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+
+<h3>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
+
+"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+
+<h3>1914 translation by H. Rackham</h3>
+
+"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</div>
   <div class="footer">
     <p> Sono le ore <%= new java.util.Date() %> .</p>
     <!-- end .footer --></div>
