@@ -1,2 +1,3 @@
 # Module main
 # RPC service class, partial path of RPC policy file
+consorzio.client.service.TwitterService, EBBDA973087426F08183A58FDB2514A8.gwt.rpc
