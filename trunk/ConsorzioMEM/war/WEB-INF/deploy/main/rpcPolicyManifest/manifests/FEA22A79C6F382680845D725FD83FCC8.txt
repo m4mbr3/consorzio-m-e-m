@@ -1,2 +1,0 @@
-serviceClass: consorzio.client.service.TwitterService
-path: EBBDA973087426F08183A58FDB2514A8.gwt.rpc
