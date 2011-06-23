@@ -10,11 +10,11 @@
 <title>Consorzio di 3 disperati senza GWT</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
 <script type="text/javascript">
- function prova(){
+ function nascondi(){
  	document.getElementById("classprova").style.display ='none';
  	
  }
- function prova2(){
+ function mostra(){
  	document.getElementById("classprova").style.display = 'Block';
  }
  
