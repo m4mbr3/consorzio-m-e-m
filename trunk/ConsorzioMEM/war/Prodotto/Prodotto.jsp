@@ -6,16 +6,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>twitter Index</title>
+<title>Prodotto Prodotto</title>
 </head>
 <body>
-<p>Hello twitter Index !!!</p>
-<p>What are you doing?</p>
-<form method="post" action="tweet">
- <c:forEach var="e" items="${tweetList}">
-	  <li><a href="#">${f:h(e.content)}</a></li>
-</c:forEach>
-<textarea name="content"></textarea><br />
-<input type="submit" value="tweet"/>
+<p>Hello Prodotto Prodotto !!!</p>
 </body>
 </html>
