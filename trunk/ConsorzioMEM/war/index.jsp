@@ -9,6 +9,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Consorzio di 3 disperati senza GWT</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
+<script type="text/javascript">
+ function prova(){
+ 	document.getElementById("classprova").style.display ='none';
+ 	
+ }
+ function prova2(){
+ 	document.getElementById("classprova").style.display = 'Block';
+ }
+ 
+</script>
 </head>
 
 <body>
@@ -18,7 +28,14 @@
     <!-- end .header --></div>
   <div class="sidebar1">
     <ul class="nav">
-      <li><a href="/twitter/">Visualizza menu esteso</a></li>
+      <li id="menu" onMouseOver="prova2();" onMouseOut="prova();"><a href="/twitter/">Visualizza menu esteso</a>
+      	<ul class="navprova" id="classprova" style="display:none;color:'#000000';">
+		      <li><a href="#">prova</a></li>
+		      <li><a href="#">prova</a></li>
+		      <li><a href="#">prova</a></li>
+		      <li><a href="#">prova</a></li>
+      	</ul>
+      </li>
       <li><a href="#">Stagioni</a></li>
       <li><a href="#">Categorie</a></li>
       <li><a href="#">Occasioni</a></li>
