@@ -7,8 +7,6 @@ import consorzio.service.TwitterService;
 import org.slim3.controller.Controller;
 import org.slim3.controller.Navigation;
 
-import com.sun.xml.internal.rngom.parse.host.Base;
-
 public class IndexController extends Controller {
 
     private TwitterService service = new TwitterService();
