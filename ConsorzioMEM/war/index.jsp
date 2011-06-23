@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Consorzio di 3 disperati senza GWT</title>
+<title>Consorzio di 3 disperati senza GWT versione 0.0.0.1</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
 <script type="text/javascript">
  function nascondi(){
@@ -28,16 +28,13 @@
     <!-- end .header --></div>
   <div class="sidebar1">
     <ul class="nav">
-      <li id="menu" onMouseOver="prova2();" onMouseOut="prova();"><a href="/twitter/">Visualizza menu esteso</a>
+       <li id="menu" onMouseOver="prova2();" onMouseOut="prova();"><a href="/Prodotto/">Prodotti</a>
       	<ul class="navprova" id="classprova" style="display:none;color:'#000000';">
-		      <li><a href="#">prova</a></li>
-		      <li><a href="#">prova</a></li>
-		      <li><a href="#">prova</a></li>
-		      <li><a href="#">prova</a></li>
+		      <li><a href="/Prodotto/">Tutti i prodotti</a></li>
+		      <li><a href="#">Stagioni</a></li>
+		      <li><a href="#">Categorie</a></li>
       	</ul>
       </li>
-      <li><a href="#">Stagioni</a></li>
-      <li><a href="#">Categorie</a></li>
       <li><a href="#">Occasioni</a></li>
       <li><a href="#">Offerte speciali</a></li>
       <li><a href="#">Dieta</a></li>
