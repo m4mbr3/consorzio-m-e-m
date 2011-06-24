@@ -11,11 +11,12 @@
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
 <script type="text/javascript">
  function nascondi(){
- 	document.getElementById("classprova").style.display ='none';
+ 	document.getElementByClass("classprova").style.display ='none';
+ 	
  	
  }
  function mostra(){
- 	document.getElementById("classprova").style.display = 'Block';
+ 	document.getElementByClass("classprova").style.display = 'Block';
  }
  
 </script>
@@ -28,26 +29,39 @@
     <!-- end .header --></div>
   <div class="sidebar1">
     <ul class="nav">
-       <li id="menu" onMouseOver="prova2();" onMouseOut="prova();"><a href="/Prodotto/">Prodotti</a>
-      	<ul class="navprova" id="classprova" style="display:none;color:'#000000';">
-		      <li><a href="/Prodotto/">Tutti i prodotti</a></li>
-		      <li><a href="#">Stagioni</a></li>
-		      <li><a href="#">Categorie</a></li>
+       <li id="menu1" onMouseOver="mostra();" onMouseOut="nascondi();"><a >Prodotti</a>
+      	<ul class="nav" id="classprova" style="display:none;">
+		      <li><a href="/TuttiProdotti/">Tutti i prodotti</a></li>
+		      <li><a href="/Stagioni/">Stagioni</a></li>
+		      <li><a href="/Categorie/">Categorie</a></li>
       	</ul>
       </li>
-      <li><a href="#">Occasioni</a></li>
-      <li><a href="#">Offerte speciali</a></li>
-      <li><a href="#">Dieta</a></li>
-      <li><a href="#">Regioni</a></li>
-      <li><a href="#">Problemi alimentari</a></li>
-      <c:forEach var="e" items="${tweetList}">
-	  <li><a href="#">${f:h(e.content)}</a></li>
-	  </c:forEach>
+      <li id="menu2" onMouseOver="mostra();" onMouseOut="nascondi();"><a >Ricette</a>
+      	<ul class="nav" id="classprova2" style="display:none;">
+		      <li><a href="/Ricette/">Tutte</a></li>
+		      <li><a href="/Occasioni/">Occasioni</a></li>
+		      <li><a href="/SpecialNeeds/">Bisogni Specifici</a></li>
+      	</ul>
+      </li>
+      <li><a href="/Mesi/">Offerte</a></li>
+      <li><a href="/Consorzio/">Consorzio</a></li>
+      <li id="menu3" onMouseOver="mostra();" onMouseOut="nascondi();"><a >Produttori</a>
+      	<ul class="nav" id="classprova3" style="display:none;">
+		      <li><a href="/Produttori/">Tutti i produttori</a></li>
+		      <li><a href="/Regioni/">Regioni</a></li>
+      	</ul>
+      </li>
+     <li id="menu3" onMouseOver="mostra();" onMouseOut="nascondi();"><a >Dieta</a>
+      	<ul class="nav" id="classprova4" style="display:none;">
+		      <li><a href="/Occasioni/">Tutti i produttori</a></li>
+		      <li><a href="/Regioni/">Regioni</a></li>
+		      <li><a href="/ObiettiviProblemi/">Problemi alimentari</a></li>
+      	</ul>
+      </li>
+      
+    
     </ul>
-<p>Va se prima visualizzi menu esteso</p>
-<form method="post" action="tweet">
-<textarea name="content"></textarea><br />
-<input type="submit" value="tweet"/>
+
 
 
   </div>
