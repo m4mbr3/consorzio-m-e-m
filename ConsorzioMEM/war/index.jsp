@@ -20,6 +20,7 @@
  }
  
 </script>
+<link href="css/home.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -29,6 +30,7 @@
     <!-- end .header --></div>
   <div class="sidebar1">
     <ul class="nav">
+          <li><a href="/Info/">Bio</a></li>
        <li id="menu1" onMouseOver="mostra();" onMouseOut="nascondi();"><a >Prodotti</a>
       	<ul class="nav" id="classprova" style="display:none;">
 		      <li><a href="/TuttiProdotti/">Tutti i prodotti</a></li>
@@ -44,7 +46,7 @@
       	</ul>
       </li>
       <li><a href="/Mesi/">Offerte</a></li>
-      <li><a href="/Consorzio/">Consorzio</a></li>
+      <li><a href="/Consorzio/" >Consorzio</a></li>
       <li id="menu3" onMouseOver="mostra();" onMouseOut="nascondi();"><a >Produttori</a>
       	<ul class="nav" id="classprova3" style="display:none;">
 		      <li><a href="/Produttori/">Tutti i produttori</a></li>
