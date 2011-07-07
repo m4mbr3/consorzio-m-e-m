@@ -12,19 +12,26 @@ import org.slim3.datastore.Datastore;
 
 import consorzio.meta.ProdottoMeta;
 import consorzio.model.Prodotto;
+import consorzio.service.StagioneService;
 
 public class IndexController extends Controller {
 
     
     @Override
     public Navigation run() throws Exception {
-       /* Prodotto pro = new Prodotto();
-        pro.setStagione("Autunno");
-        pro.setDescr("blablablablaprova");
-        Datastore.put(pro);*/ 
-        ProdottoMeta e = new ProdottoMeta().get();
-        List<Prodotto> list = (List<Prodotto>) Datastore.query(e).filter(e.Stagione.equal("Autunno")).asList();
-        requestScope("list", list);
+       //Prodotto p = new Prodotto();
+       // p.setDescr("asdakljhadfkjahsdfkjasd");
+       // p.setNome("Ciao");
+       // p.setStagione("Estate");
+       // Datastore.put(p);
+       // p.setStagione("Inverno");
+       // Datastore.put(p);
+       // p.setStagione("Primavera");
+       // Datastore.put(p);*/
+        requestScope("listAutunno", (new StagioneService()).getProdottiXStagione("Autunno"));
+        requestScope("listEstate", (new StagioneService()).getProdottiXStagione("Estate"));
+        requestScope("listInverno", (new StagioneService()).getProdottiXStagione("Inverno"));
+        requestScope("listPrimavera", (new StagioneService()).getProdottiXStagione("Primavera"));
         return forward("index.jsp");
     }
 }

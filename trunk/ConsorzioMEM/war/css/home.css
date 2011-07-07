@@ -10,7 +10,16 @@ body {
 	height:100 %;
 	width:100 %;
 }
+.elencoright{
+text-align:left;
+background-position:left;
 
+}
+.elencoleft{
+text-align:right;
+background-position:right;
+
+}
 /* ~~ Selettori tag/elemento ~~ */
 ul, ol, dl { /* A causa delle differenze tra i browser, è buona norma impostare a zero il margine e la spaziatura interna negli elenchi. Per uniformità, potete specificare qui i valori desiderati, oppure nelle voci di elenco (LI, DT, DD) contenute negli elenchi. Tenete presente che le impostazioni effettuate qui verranno applicate a cascata all'elenco .nav a meno che non scegliate di scrivere un selettore più specifico. */
 	padding: 0;
@@ -88,10 +97,17 @@ margin-top:10px;
 }
 .par{
 background-color:#D9D9D9;
+text-align:right;
+padding-left:70px;
+padding-right:140px;
 }
--disp{
+.disp{
 background-color:#FFFFFF;
+text-align:left;
+padding-left:140px;
+padding-right:70px;
 }
+
 #icon_primavera, #icon_autunno{
 text-align:right;
 }
@@ -101,12 +117,12 @@ text-align:left;
 
 h3.h3left , icon_left {
  	text-align:left;
-	margin-left:30px;
+	margin-left:100px;
 	padding-top:30px;
 	}
 h3.h3right, icon_right {
 	text-align:right;
-	margin-right:30px;
+	margin-right:100px;
 	padding-top:30px;
 	}
 /* ~~ Gli stili dell'elenco di navigazione (rimovibili se scegliete di utilizzare un menu flyout reimpostato come Spry) ~~ */

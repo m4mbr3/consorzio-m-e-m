@@ -1,4 +1,4 @@
-<%@page pageEncoding="UTF-8" isELIgnored="false" session="false"%>
+<%@page pageEncoding="UTF-8" isELIgnored="false" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@taglib prefix="f" uri="http://www.slim3.org/functions"%>
@@ -74,25 +74,39 @@
 	
   </div>
   <div class="content">
-	  <div  class="disp"  id="primavera">
+	  <div  class="disp"  id="primavera" >
 	  	<h3  class="h3left"> Primavera </h3> 
-		<div id="icon_primavera"><img src="/primavera.jpg" class="icon icon_right"  /></div>
-		<c:if test="${fn:length(list) > 0}">
-		 <c:forEach var="e" items="${list}">
-	  <li><a href="">${f:h(e.Descr)}</a></li>
+		<div id="icon_primavera"><img src="/primavera.jpg" class="icon icon_right"  id="icon_primavera" /></div>
+		 <c:forEach var="z" items="${listPrimavera}">
+	  				  				<u><h4>${f:h(z.nome)}</h4></u>
 		</c:forEach>
 	  </div>
 	  <div  class="par"  id="estate">
 	    <h3 class="h3right"> Estate </h3>
-		<div id="icon_estate"><img src="/estate.jpg" class="icon icon_left"  /></div>
+		<div id="icon_estate"><img src="/estate.jpg" class="icon icon_left"  id="icon_estate"/></div>
+		<c:forEach var="p" items="${listEstate}">
+	  			<p class="elencoright">
+	  				<u class="h3right"><h4 class="h3right">${f:h(p.nome)}</h4></u>
+				</p>	
+		</c:forEach>
 	  </div>
 	  <div  class="disp"  id="autunno">
 	  	<h3 class="h3left"> Autunno </h3>
 <div id="icon_autunno"> <img src="/autunno.jpg" class="icon icon_right"  id="icon_autunno" /></div>
+	<c:forEach var="e" items="${listAutunno}">
+	  			<p class="elencoleft">
+	  				<u><h4>${f:h(e.nome)}</h4></u>
+				</p>	
+		</c:forEach>
 	  </div>
 	  <div  class="par"  id="inverno">
 	  	<h3 class="h3right"> Inverno </h3> 
 			<div id="icon_inverno"><img src="/Inverno.jpg" class="icon icon_left"  id="icon_inverno" /></div>
+			<c:forEach var="s" items="${listInverno}">
+	  			<p class="elencoright">
+	  				<u><h4>${f:h(s.nome)}</h4></u>
+				</p>	
+		</c:forEach>
 	  </div>
   </div>
   <div class="footer">
