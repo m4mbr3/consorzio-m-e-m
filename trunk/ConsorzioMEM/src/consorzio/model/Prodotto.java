@@ -25,13 +25,24 @@ public class Prodotto implements Serializable {
     @Attribute
     private int Prezzo;
     
-    @Attribute(lob = true)
+    @Attribute
+    private String Stagione;
+    
+    public String getStagione() {
+        return Stagione;
+    }
+
+    public void setStagione(String stagione) {
+        Stagione = stagione;
+    }
+
+    @Attribute//(lob = true)
     private String Descr;
     
     @Attribute(lob = true)
     private Image Immagine;
     
-   
+    
     
     
     /**

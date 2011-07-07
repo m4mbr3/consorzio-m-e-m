@@ -7,6 +7,8 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #000;
+	height:100 %;
+	width:100 %;
 }
 
 /* ~~ Selettori tag/elemento ~~ */
@@ -34,12 +36,13 @@ a:visited {
 }
 a:hover, a:active, a:focus { /* Questo gruppo di selettori conferisce alla navigazione tramite tastiera gli stessi effetti hover che si producono quando si usa il mouse. */
 	text-decoration: none;
+	background: #669933;
 }
 
 /* ~~ Questo contenitore a larghezza fissa circonda gli altri div ~~ */
 .container {
 	width: 960px;
-	background: #FFF;
+	background: #ADB96E;
 	margin: 0 auto; /* Il valore automatico sui lati, abbinato alla larghezza, produce un layout centrato. */
 }
 
@@ -62,26 +65,55 @@ a:hover, a:active, a:focus { /* Questo gruppo di selettori conferisce alla navig
 .sidebar1 {
 	float: left;
 	width: 180px;
-	background: #EADCAE;
-	padding-bottom: 10px;
+	background:#42413C;
 }
 .content {
-
 	padding: 10px 0;
 	width: 780px;
 	float: left;
+	background:#FFFFFF;
 }
 
 /* ~~ Questo selettore raggruppato fornisce spazio agli elenchi dell'area .content ~~ */
 .content ul, .content ol { 
 	padding: 0 15px 15px 40px; /* Questa spaziatura rispecchia la spaziatura destra nella regola di intestazione e paragrafo riportata sopra. La spaziatura è stata applicata al lato inferiore per garantire uno spazio tra gli altri elementi negli elenchi e a sinistra per creare il rientro. Può essere regolata a piacere. */
 }
+.icon{
+height:150px;
+width:150px;
+margin-bottom:10px;
+margin-left:10px;
+margin-right:10px;
+margin-top:10px;
+}
+.par{
+background-color:#D9D9D9;
+}
+-disp{
+background-color:#FFFFFF;
+}
+#icon_primavera, #icon_autunno{
+text-align:right;
+}
+#icon_estate, #icon_inverno{
+text-align:left;
+}
 
+h3.h3left , icon_left {
+ 	text-align:left;
+	margin-left:30px;
+	padding-top:30px;
+	}
+h3.h3right, icon_right {
+	text-align:right;
+	margin-right:30px;
+	padding-top:30px;
+	}
 /* ~~ Gli stili dell'elenco di navigazione (rimovibili se scegliete di utilizzare un menu flyout reimpostato come Spry) ~~ */
 ul.nav {
 	list-style: none; /* Rimuove l'indicatore di elenco */
 	border-top: 1px solid #666; /* Crea il bordo superiore dei collegamenti; tutti gli altri vengono posizionati utilizzando un bordo inferiore sul LI */
-	margin-bottom: 15px; /* Crea lo spazio tra gli elementi di navigazione nel contenuto sottostante */
+/* Crea lo spazio tra gli elementi di navigazione nel contenuto sottostante */
 }
 ul.nav li {
 	border-bottom: 1px solid #666; /* Crea la separazione tra i pulsanti */
@@ -114,6 +146,9 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* Cambia il colore dello sfon
 .fltlft { /* questa classe può essere utilizzata per applicare un float a un elemento a sinistra nella pagina. L'elemento con float deve precedere l'elemento al quale deve essere affiancato sulla pagina. */
 	float: left;
 	margin-right: 8px;
+}
+.class {
+	color: #		
 }
 .clearfloat { /* Questa classe può essere inserita in un <br /> o in un div vuoto come elemento finale subito dopo l'ultimo div con float (all'interno del #container) se il #footer sul viene rimosso o estratto dal #container. */
 	clear:both;
