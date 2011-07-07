@@ -4,40 +4,38 @@ import java.io.Serializable;
 
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.images.Image;
-
-import org.slim3.datastore.Attribute;
 import org.slim3.datastore.Model;
+import org.slim3.datastore.Attribute;
 
-@Model(schemaVersion = 1)
+
+@Model
 public class Prodotto implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
+ 
+    @Attribute(version = true)
+    private Long version;
+ 
+ 
+    @Attribute
+    private  String Descr;
+    
     @Attribute(primaryKey = true)
     private Key key;
 
-    @Attribute(version = true)
-    private Long version;
     
-    @Attribute
+   
     private String Nome;
     
-    @Attribute
+   
     private int Prezzo;
     
-    @Attribute
+   
     private String Stagione;
     
-    public String getStagione() {
-        return Stagione;
-    }
+ 
 
-    public void setStagione(String stagione) {
-        Stagione = stagione;
-    }
-
-    @Attribute//(lob = true)
-    private String Descr;
+    
     
     @Attribute(lob = true)
     private Image Immagine;
@@ -144,4 +142,13 @@ public class Prodotto implements Serializable {
     public int getPrezzo() {
         return Prezzo;
     }
+    public String getStagione() {
+        return Stagione;
+    }
+
+    public void setStagione(String stagione) {
+        Stagione = stagione;
+    }
+
+    
 }
