@@ -21,7 +21,6 @@
  
 </script>
 <link href="css/home.css" rel="stylesheet" type="text/css">
-<link href="file:///Macintosh HD/Users/Elio/Documents/workspace/ConsorzioMEM/war/css/home.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -31,6 +30,7 @@
     <!-- end .header --></div>
   <div class="sidebar1">
     <ul class="nav">
+       <li><a href="/Info/">Bio</a></li>
        <li id="menu1" onMouseOver="mostra();" onMouseOut="nascondi();"><a >Prodotti</a>
       	<ul class="nav" id="classprova" style="display:none;">
 		      <li><a href="/TuttiProdotti/">Tutti i prodotti</a></li>
