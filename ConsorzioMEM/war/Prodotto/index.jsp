@@ -9,44 +9,73 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Prodotti</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
+
 <script type="text/javascript">
- function nascondi(){
- 	document.getElementById("classprova").style.display ='none';
- 	
+ 
+ function nascondi(id){
+ 	document.getElementById(id).style.display ='none';	
  }
- function mostra(){
- 	document.getElementById("classprova").style.display = 'Block';
+ 
+ function mostra(id){
+ 	document.getElementById(id).style.display = 'Block';
  }
  
 </script>
+<link href="css/home.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
 <div class="container">
-  <div class="header"><a href="/"><img src="/biologo.png" width="90" height="90" id="Insert_logo" style="background: #C6D580; display:block;" /></a> 
-    <!-- end .header --></div>
+  <div class="header">
+    <a href="/"><img src="/nature_banner_8-1.png" width="961" height="188" id="Insert_logo" style="background: #C6D580; display:block;" /></a>
+  <!-- end .header --></div>
+  
   <div class="sidebar1">
     <ul class="nav">
-       <li id="menu" onMouseOver="prova2();" onMouseOut="prova();"><a href="/Prodotto/">Prodotti</a>
-      	<ul class="navprova" id="classprova" style="display:none;color:'#000000';">
-		      <li><a href="/Prodotto/">Tutti i prodotti</a></li>
-		      <li><a href="#">Stagioni</a></li>
-		      <li><a href="#">Categorie</a></li>
+          <li><a href="/Info/">Bio</a></li>
+      <li id="menu1" onMouseOver="mostra('prodotti');" onMouseOut="nascondi('prodotti');"><a>Prodotti</a>
+      	
+	      	<ul class="nav" id="prodotti" style="display:none;">
+			      <p>
+			      <li><a href="/TuttiProdotti/">Tutti i prodotti</a></li>
+			      <li><a href="/Stagioni/">Stagioni</a></li>
+			      <li><a href="/Categorie/">Categorie</a></li>
+			      </p>
+	      	</ul>
+      
+      </li>
+      <li id="menu2" onMouseOver="mostra('ricette');" onMouseOut="nascondi('ricette');"><a>Ricette</a>
+      	<ul class="nav" id="ricette" style="display:none;">
+		     <p>
+		      <li><a href="/Ricette/">Tutte</a></li>
+		      <li><a href="/Occasioni/">Occasioni</a></li>
+		      <li><a href="/SpecialNeeds/">Bisogni Specifici</a></li>
+		     </p>
       	</ul>
       </li>
-      <li><a href="#">Occasioni</a></li>
-      <li><a href="#">Offerte speciali</a></li>
-      <li><a href="#">Dieta</a></li>
-      <li><a href="#">Regioni</a></li>
-      <li><a href="#">Problemi alimentari</a></li>
+      <li><a href="/Mesi/">Offerte</a></li>
+      <li><a href="/Consorzio/" >Consorzio</a></li>
+      <li id="menu3" onMouseOver="mostra('produttori');" onMouseOut="nascondi('produttori');"><a>Produttori</a>
+      	<ul class="nav" id="produttori" style="display:none;">
+		      <p>
+		      <li><a href="/Produttori/">Tutti i produttori</a></li>
+		      <li><a href="/Regioni/">Regioni</a></li>
+		      </p>
+      	</ul>
+      </li>
+     <li id="menu3" onMouseOver="mostra('dieta');" onMouseOut="nascondi('dieta');"><a>Dieta</a>
+      	<ul class="nav" id="dieta" style="display:none;">
+      		<p>
+		      <li><a href="/Occasioni/">Tutti i produttori</a></li>
+		      <li><a href="/Regioni/">Regioni</a></li>
+		      <li><a href="/ObiettiviProblemi/">Problemi alimentari</a></li>
+		    </p>
+      	</ul>
+      </li>
+      
+    
     </ul>
-<p>Va se prima visualizzi menu esteso</p>
-<form method="post" action="tweet">
-<textarea name="content"></textarea><br />
-<input type="submit" value="tweet"/>
-
-
   </div>
   <div class="content">
   

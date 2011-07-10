@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Consorzio di 3 disperati senza GWT versione 0.0.0.1</title>
+<title>Stagioni</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
 
 <script type="text/javascript">
@@ -25,8 +25,9 @@
 <body>
 
 <div class="container">
-  <div class="header"><a href="/"><img src="/biologo.png" width="90" height="90" id="Insert_logo" style="background: #C6D580; display:block;" /></a> 
-    <!-- end .header --></div>
+  <div class="header">
+    <a href="/"><img src="/nature_banner_8-1.png" width="961" height="188" id="Insert_logo" style="background: #C6D580; display:block;" /></a>
+  <!-- end .header --></div>
   
   <div class="sidebar1">
     <ul class="nav">
@@ -70,8 +71,12 @@
 		    </p>
       	</ul>
       </li>
+      
+    
     </ul>
-	
+
+
+
   </div>
   <div class="content">
 	  <div  class="disp"  id="primavera" >
@@ -110,7 +115,7 @@
 	  </div>
   </div>
   <div class="footer">
-    <p> Sono le ore <%= new java.util.Date() %> .</p>
+    <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
     <!-- end .footer -->
    </div>
   <!-- end .container -->
