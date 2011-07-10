@@ -14,8 +14,16 @@ public class StagioneService {
     
     public List<Prodotto> getProdottiXStagione(String Stagione)
     {
+        List<Prodotto> list;
+        if(Stagione.equals("Inverno"))
+            list = (List<Prodotto>) Datastore.query(p).filter(p.Inverno.equal(true)).asList();
+        else if(Stagione.equals("Estate"))
+            list = (List<Prodotto>) Datastore.query(p).filter(p.Estate.equal(true)).asList();
+        else if(Stagione.equals("Autunno"))
+            list = (List<Prodotto>) Datastore.query(p).filter(p.Autunno.equal(true)).asList();
+        else
+            list = (List<Prodotto>) Datastore.query(p).filter(p.Primavera.equal(true)).asList();
         
-        List<Prodotto> list = (List<Prodotto>) Datastore.query(p).filter(p.Stagione.equal(Stagione)).asList();
         return list;
     }
 }

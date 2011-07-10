@@ -17,6 +17,18 @@ public class Prodotto implements Serializable {
     private Long version;
  
  
+    public String getUMisura() {
+        return UMisura;
+    }
+
+    public void setUMisura(String uMisura) {
+        UMisura = uMisura;
+    }
+
+    public static long getSerialversionuid() {
+        return serialVersionUID;
+    }
+
     @Attribute
     private  String Descr;
     
@@ -30,15 +42,15 @@ public class Prodotto implements Serializable {
    
     private int Prezzo;
     
-   
-    private String Stagione;
+    private String UMisura;
+    
+    private Boolean Autunno;
+    private Boolean Primavera;
+    private Boolean Inverno;
+    private Boolean Estate;
     
  
 
-    
-    
-    @Attribute(lob = true)
-    private Image Immagine;
     
     
     
@@ -127,13 +139,6 @@ public class Prodotto implements Serializable {
         return Descr;
     }
 
-    public void setImmagine(Image immagine) {
-        Immagine = immagine;
-    }
-
-    public Image getImmagine() {
-        return Immagine;
-    }
 
     public void setPrezzo(int prezzo) {
         Prezzo = prezzo;
@@ -142,13 +147,39 @@ public class Prodotto implements Serializable {
     public int getPrezzo() {
         return Prezzo;
     }
-    public String getStagione() {
-        return Stagione;
+
+    public Boolean getAutunno() {
+        return Autunno;
     }
 
-    public void setStagione(String stagione) {
-        Stagione = stagione;
+    public void setAutunno(Boolean autunno) {
+        Autunno = autunno;
     }
+
+    public Boolean getPrimavera() {
+        return Primavera;
+    }
+
+    public void setPrimavera(Boolean primavera) {
+        Primavera = primavera;
+    }
+
+    public Boolean getInverno() {
+        return Inverno;
+    }
+
+    public void setInverno(Boolean inverno) {
+        Inverno = inverno;
+    }
+
+    public Boolean getEstate() {
+        return Estate;
+    }
+
+    public void setEstate(Boolean estate) {
+        Estate = estate;
+    }
+   
 
     
 }

@@ -6,26 +6,32 @@ import java.util.Map;
 import org.slim3.datastore.Datastore;
 import org.slim3.util.BeanUtil;
 
+import consorzio.meta.ImmagineMeta;
 import consorzio.meta.ProdottoMeta;
+import consorzio.model.Immagine;
 import consorzio.model.Prodotto;
 
+import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.Transaction;
 
 public class ProdottoService {
-    private ProdottoMeta p = new ProdottoMeta();
-
-    public Prodotto tweet(Map<String, Object> input) {
-        Prodotto prodotto = new Prodotto();
-        BeanUtil.copy(input, prodotto);
-        Transaction tx = Datastore.beginTransaction();
-        Datastore.put(prodotto);
-        tx.commit();
+    private ProdottoMeta p = ProdottoMeta.get();
+    private ImmagineMeta i = ImmagineMeta.get();
+    private UploadService service = new UploadService();
+    public Prodotto getProdotto(Key key)
+    {
+        Prodotto prodotto = Datastore.query(p).filter(p.key.equal(key)).asSingle();
         return prodotto;
     }
-    //per la lista dei prodotti prendendo dal datastore
-    public List<Prodotto> getListaProdotti() {
-        return Datastore.query(p).sort(p.Nome.asc).asList();
+    public int getNumeroImmagini(Key key)
+    {
+        List<Immagine> immagini = (List<Immagine>)Datastore.query(i).filter(i.key_Product.equal(key)).asList();
+        return immagini.size();
     }
-    
+    public List<Immagine> getListaImmagini(Key key)
+    {
+        List<Immagine> immagini = (List<Immagine>)Datastore.query(i).filter(i.key_Product.equal(key)).asList();
+        return immagini;
+    }
 }
    
