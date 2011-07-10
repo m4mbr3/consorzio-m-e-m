@@ -27,8 +27,9 @@
 <body>
 
 <div class="container">
-  <div class="header"><a href="/"><img src="/biologo.png" width="90" height="90" id="Insert_logo" style="background: #C6D580; display:block;" /></a> 
-    <!-- end .header --></div>
+  <div class="header">
+    <a href="/"><img src="nature_banner_8-1.png" width="961" height="188" id="Insert_logo" style="background: #C6D580; display:block;" /></a><a href="/">
+  <!-- end .header --></div>
   
   <div class="sidebar1">
     <ul class="nav">
@@ -103,7 +104,7 @@
 </p>
 </div>
   <div class="footer">
-    <p> Sono le ore <%= new java.util.Date() %> .</p>
+    <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
     <!-- end .footer -->
    </div>
   <!-- end .container -->
