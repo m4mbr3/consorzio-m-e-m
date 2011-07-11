@@ -1,11 +1,13 @@
-<%@page pageEncoding="UTF-8" isELIgnored="false" %>
+<%@page pageEncoding="UTF-8" isELIgnored="false"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@taglib prefix="f" uri="http://www.slim3.org/functions"%>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Stagioni</title>
+<title>Caricamento Prodotti</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
 
 <script type="text/javascript">
@@ -65,11 +67,11 @@
      <li id="menu3" onMouseOver="mostra('dieta');" onMouseOut="nascondi('dieta');"><a>Dieta</a>
       	<ul class="nav" id="dieta" style="display:none;">
       		<p>
-		      <li><a href="/Occasioni/">Tutte le occasioni</a></li>
-		      <li><a href="/ObiettiviProblemi/">Obiettivi o Problemi alimentari</a></li>
+		      <li><a href="/Occasioni/">Tutti i produttori</a></li>
+		      <li><a href="/Regioni/">Regioni</a></li>
+		      <li><a href="/ObiettiviProblemi/">Problemi alimentari</a></li>
 		    </p>
-      	</ul>
-      </li>
+      	</ul> 	      </li>
       
     
     </ul>
@@ -78,64 +80,37 @@
 
   </div>
   <div class="content">
-	  <div  class="disp"  id="primavera" >
-	  	<h3  class="h3left"> Primavera </h3> 
-		<div id="icon_primavera"><img src="/primavera.jpg" class="icon icon_right"  id="icon_primavera" /></div>
-		 <ul>
-		 <c:forEach var="z" items="${listPrimavera}">
-	  				  				<li><h4><a href="/Prodotto/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
-										<ul>
-										<li> ${f:h(z.descr)}</li>
-										</ul>
-									</li>
-		</c:forEach>
-		</ul>
-	  </div>
-	  <div  class="par"  id="estate">
-	    <h3 class="h3right"> Estate </h3>
-		<div id="icon_estate"><img src="/estate.jpg" class="icon icon_left"  id="icon_estate"/></div>
-		<ul style="text-align:right;">
-		<c:forEach var="p" items="${listEstate}">
-								<li><h4><a href="/Prodotto/?key=${f:h(z.key)}">${f:h(p.nome)}</a></h4>
-										<ul>
-										<li> ${f:h(p.descr)}</li>
-										</ul>
-									</li>		</c:forEach>
-		</ul>
-	  </div>
-	  <div  class="disp"  id="autunno">
-	  	<h3 class="h3left"> Autunno </h3>
-<div id="icon_autunno"> <img src="/autunno.jpg" class="icon icon_right"  id="icon_autunno" /></div>
-	<ul>
-	<c:forEach var="e" items="${listAutunno}">
-	  											<li><h4><a href="/Prodotto/?key=${f:h(z.key)}">${f:h(e.nome)}</a></h4>
-										<ul>
-										<li> ${f:h(e.descr)}</li>
-										</ul>
-									</li>
-		</c:forEach>
-	</ul>
-	  </div>
-	  <div  class="par"  id="inverno">
-	  	<h3 class="h3right"> Inverno </h3> 
-			<div id="icon_inverno"><img src="/Inverno.jpg" class="icon icon_left"  id="icon_inverno" /></div>
-			<ul>
-			<c:forEach var="s" items="${listInverno}">
-	  												<li><h4><a href="/Prodotto/?key=${f:h(z.key)}">${f:h(s.nome)}</a></h4>
-										<ul>
-										<li> ${f:h(s.descr)}</li>
-										</ul>
-									</li>
-		</c:forEach>
-		</ul>
-	  </div>
-  </div>
+  				<h2> Carica un Prodotto!!!</h2>
+				<form method="post" action="/UploadProdotto/">
+				<p><label id="Nome_label">Nome</label> 
+								<input type="text" id="Nome" name="Nome"  />		</p>
+				<p><label id="Descr_label">Descrizione</label>
+								<textarea id="Descr"  rows="15" cols="80" name="Descr" ></textarea></p>
+				<p><label id="Prezzo_label">Prezzo</label>
+								<input type="text" id="Prezzo" name="Prezzo" /></p>
+				<p><label id="Unit_label">Unità di misura </label>
+								<select id="Unit"  name="Unit">
+								<option>Euro/Kg</option>
+				  				<option>Euro/g</option>
+			  					<option>Euro/lt</option>
+								</select></p>
+				<p><label id="Autunno_label">Autunno</label>
+								<input type="checkbox" id="Autunno"  name="Autunno"/></p>			
+								<p><label id="Inverno_label">Inverno</label>
+								<input type="checkbox" id="Inverno"  name="Inverno"/></p>		
+								<p><label id="Primavera_label">Primavera</label>
+								<input type="checkbox" id="Primavera"  name="Primavera"/></p>		
+								<p><label id="Estate_label">Estate</label>
+								<input type="checkbox" id="Estate"  name="Estate"/></p>		
+								
+				<input type="submit" name="Carica" id="Carica" value="Carica">
+				</form>
+</div>
   <div class="footer">
-    <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
+    <p> Sono le ore <%= new java.util.Date() %> .</p>
     <!-- end .footer -->
    </div>
   <!-- end .container -->
-  
   </div>
 </body>
 </html>

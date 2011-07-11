@@ -28,9 +28,6 @@ public class Immagine implements Serializable {
     @Attribute
     private Key key_Product;
     
-    @Attribute(lob = true)
-    private Image image;
-    
     @Attribute
     private int length;
     
@@ -66,13 +63,6 @@ public class Immagine implements Serializable {
         this.key_Product = key_Product;
     }
 
-    public Image getImage() {
-        return image;
-    }
-
-    public void setImage(Image image) {
-        this.image = image;
-    }
 
     public String getNome() {
         return Nome;
