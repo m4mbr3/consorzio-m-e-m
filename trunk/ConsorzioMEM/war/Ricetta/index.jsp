@@ -7,9 +7,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Ricette</title>
+<title>Prodotti</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
-
+<script type="text/javascript" src="/css/Js/prototype.js"></script>
+<script type="text/javascript" src="/css/Js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="/css/Js/lightbox.js"></script>
+<link rel="stylesheet" href="/css/css/lightbox.css" type="text/css" media="screen" />
 <script type="text/javascript">
  
  function nascondi(id){
@@ -19,7 +22,7 @@
  function mostra(id){
  	document.getElementById(id).style.display = 'Block';
  }
- 
+
 </script>
 <link href="css/home.css" rel="stylesheet" type="text/css">
 </head>
@@ -27,10 +30,10 @@
 <body>
 
 <div class="container">
-  <div class="header">
+   <div class="header">
     <a href="/"><img src="/nature_banner_8-1.png" width="961" height="188" id="Insert_logo" style="background: #C6D580; display:block;" /></a>
-  <!-- end .header --></div>
-  
+<!-- end .header -->
+</div>
   <div class="sidebar1">
     <ul class="nav">
           <li><a href="/Info/">Bio</a></li>
@@ -75,24 +78,37 @@
       
     
     </ul>
-
-
-
   </div>
   <div class="content">
-  <h3 class="titolo_tutti_prodotti">Tutte le ricette</h3>
-	  <ul>
-	   <c:forEach var="z" items="${list}">
-									<li><h4><a href="/Ricetta/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
-										<ul>
-										<li> ${f:h(z.descr)}</li>
-										</ul>
-									</li>
-		</c:forEach>
-		</ul>
+
+  <h3 class="titolo_tutti_prodotti">Ricetta <u>${f:h(Ricetta.nome)}</u></h3>
+  
+		
+
+		
+	<p>
+		 	<c:forEach var="z" items="${ListaImmagini}">
+				<a href="/UploadImmagineRicetta/image?key=${f:h(z.key)}&v=${f:h(z.version)}" title="${f:h(z.descr)}" rel="lightbox[roadtrip]"><img class="img" src="/UploadImmagineRicetta/image?key=${f:h(z.key)}&v=${f:h(z.version)}" /></a>
+			</c:forEach>
+	</p>
+  		
+			<h3> Ricetta </h3>	
+			 <p> ${f:h(Ricetta.ricetta)}</p>
+				<h3>Categoria </h3>
+			 <p>${f:h(Ricetta.categoria)}</p>
+			 <h3>Difficoltà </h3>
+			 <p>${f:h(Ricetta.diff)}</p>
+			 <h3>Minuti di Cottura </h3>
+			 <p>${f:h(Ricetta.min_cott)}</p>
+			 <h3>Minuti Per la Preparazione </h3>
+			 <p>${f:h(Ricetta.min_prep)}</p>
+			 <h3>Ricetta Per ${f:h(Ricetta.x_num_persone)} Persone </h3>
+			 
+
+		
 </div>
   <div class="footer">
-    <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
+    <p> Sono le ore <%= new java.util.Date() %> .</p>
     <!-- end .footer -->
    </div>
   <!-- end .container -->

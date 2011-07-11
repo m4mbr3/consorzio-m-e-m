@@ -1,22 +1,16 @@
-package consorzio.controller.Prodotto;
-
+package consorzio.controller.Ricetta;
 
 import org.slim3.controller.Controller;
 import org.slim3.controller.Navigation;
 
-
-import consorzio.service.ProdottoService;
-
+import consorzio.service.RicettaService;
 
 public class IndexController extends Controller {
-    
-    private ProdottoService service = new ProdottoService();
-   
+
+    private RicettaService service = new RicettaService();
     @Override
     public Navigation run() throws Exception {
- 
-      
-        requestScope("Prodotto", service.getProdotto(asKey("key")));
+        requestScope("Ricetta", service.getRicetta(asKey("key")));
         requestScope("NumeroImmagini",service.getNumeroImmagini(asKey("key")));
         requestScope("ListaImmagini",service.getListaImmagini(asKey("key")));
         return forward("index.jsp");

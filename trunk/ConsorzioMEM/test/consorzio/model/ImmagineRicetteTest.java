@@ -1,16 +1,16 @@
-package consorzio.service;
+package consorzio.model;
 
 import org.slim3.tester.AppEngineTestCase;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
-public class ProdottoServiceTest extends AppEngineTestCase {
+public class ImmagineRicetteTest extends AppEngineTestCase {
 
-    private ProdottoService service = new ProdottoService();
+    private ImmagineRicette model = new ImmagineRicette();
 
     @Test
     public void test() throws Exception {
-        assertThat(service, is(notNullValue()));
+        assertThat(model, is(notNullValue()));
     }
 }

@@ -46,8 +46,16 @@ public class Prodotto implements Serializable {
     @Attribute(primaryKey = true)
     private Key key;
 
-    
+    private Key key_ricetta;
    
+    public Key getKey_ricetta() {
+        return key_ricetta;
+    }
+
+    public void setKey_ricetta(Key key_ricetta) {
+        this.key_ricetta = key_ricetta;
+    }
+
     private String Nome;
     
    

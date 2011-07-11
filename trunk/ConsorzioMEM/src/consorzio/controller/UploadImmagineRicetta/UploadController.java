@@ -1,4 +1,4 @@
-package consorzio.controller.Upload;
+package consorzio.controller.UploadImmagineRicetta;
 
 import org.slim3.controller.Controller;
 import org.slim3.controller.Navigation;

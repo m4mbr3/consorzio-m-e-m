@@ -23,74 +23,6 @@
  	document.getElementById(id).style.display = 'Block';
  }
 
-				immagini = new Array();
-				icone = new Array();
-				rel = new Array();
-				var numeroimg=0;
-				var numeropagine=0;
-				var stato =0;
-function avanti()
-	{
-	 	if (stato < numeropagine)
-		{
-			stato++;
-			var i,j;
-			j=0;
-			i =(12*stato);
-			//alert(i+","+j+","+stato+","+numeroimg);
-			for (; i<(12*(stato	+1)); i++)
-			{
-					
-					if(i < numeroimg)
-					{
-						document.images[2+j].src = icone[i];
-						document.links[8+j].href = immagini[i];
-						document.links[8+j].rel = rel[i];
-						}
-					else
-					{ 
-					document.images[2+j].src = "/print_x.png";
-					document.links[8+j].href = "";
-					document.links[8+j].rel = "";
-					}
-					j++;
-					
-			}
-		}	
-		else alert("Non sono disponibili pagine successive");
- 		
-	}
-	function indietro()
-	{
-		  	if (stato > 0)
-		{
-			stato --;
-			var i,j;
-			j=0;
-			i =(3*stato);
-			//alert(i+","+j+","+stato+","+numeroimg);
-			for (; i<(3*(stato	+1)); i++)
-			{
-					
-					if(i < numeroimg)
-					{
-						document.images[2+j].src = icone[i];
-						document.links[15+j].href = immagini[i];
-						document.links[15+j].rel = rel[i];
-					}
-					else
-					{ 
-						document.images[2+j].src = "/print_x.png";
-						document.links[15+j].href = "";
-						document.links[15+j].rel = "";
-
-					}
-					j++;
-					
-			}
-		}	
-		else alert("Non sono disponibili pagine precedenti");
-	}		
 </script>
 <link href="css/home.css" rel="stylesheet" type="text/css">
 </head>
@@ -149,7 +81,7 @@ function avanti()
   </div>
   <div class="content">
 
-  <h3 class="titolo_tutti_prodotti">Prodotto ${f:h(Prodotto.nome)}</h3>
+  <h3 class="titolo_tutti_Prodotti">Prodotto ${f:h(Prodotto.nome)}</h3>
   
 		
 
@@ -159,13 +91,7 @@ function avanti()
 				<a href="/Upload/image?key=${f:h(z.key)}&v=${f:h(z.version)}" title="${f:h(z.descr)}" rel="lightbox[roadtrip]"><img class="img" src="/Upload/image?key=${f:h(z.key)}&v=${f:h(z.version)}" /></a>
 			</c:forEach>
 </p>
-  		<!--
-  			<img src="/arrow_sx.png" onClick="indietro()" style="height:21px; width:15px; left:5px;  top:210px;" id="sinistra" name="sinistra"  />
-  			<a href="${f:h(z.nome)}" rel="lightbox"><img src="${f:h(z.nome)}"  style=" height:76px; width:106px; left:53px; top:40px;" id="icon1" name="icon1"  /></a>
-			<a href="" rel="lightbox[roadtrip]"><img src=""  style=" height:76px; width:106px; left:197px; top:40px;" id="icon2" name="icon2" /></a>
-			<a href="" rel="lightbox[roadtrip]"><img src=""  style=" height:76px; width:106px; left:341px; top:40px;" id="icon3" name="icon3" /></a>
-			<img src="/arrow_dx.png" onClick="avanti()" style="height:21px; width:15px; left:480px; top:210px;" id="destra" name="destra" /></a>
-			-->
+  		
 			<h3> Descrizione Prodotto</h3>	
 			 <p> ${f:h(Prodotto.descr)}</p>
 				<p><h3> Prezzo:  <h5>${f:h(Prodotto.prezzo)}  ${f:h(Prodotto.UMisura)}</h5></h3></p>
