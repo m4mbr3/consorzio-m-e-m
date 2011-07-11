@@ -32,6 +32,17 @@ public class Prodotto implements Serializable {
     @Attribute
     private  String Descr;
     
+    @Attribute
+    private String Descr_breve;
+    
+    public String getDescr_breve() {
+        return Descr_breve;
+    }
+
+    public void setDescr_breve(String descr_breve) {
+        Descr_breve = descr_breve;
+    }
+
     @Attribute(primaryKey = true)
     private Key key;
 

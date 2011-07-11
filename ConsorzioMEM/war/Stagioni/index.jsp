@@ -85,7 +85,7 @@
 		 <c:forEach var="z" items="${listPrimavera}">
 	  				  				<li><h4><a href="/Prodotto/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
 										<ul>
-										<li> ${f:h(z.descr)}</li>
+										<li> ${f:h(z.descr_breve)}</li>
 										</ul>
 									</li>
 		</c:forEach>
@@ -98,7 +98,7 @@
 		<c:forEach var="p" items="${listEstate}">
 								<li><h4><a href="/Prodotto/?key=${f:h(z.key)}">${f:h(p.nome)}</a></h4>
 										<ul>
-										<li> ${f:h(p.descr)}</li>
+										<li> ${f:h(p.descr_breve)}</li>
 										</ul>
 									</li>		</c:forEach>
 		</ul>
@@ -110,7 +110,7 @@
 	<c:forEach var="e" items="${listAutunno}">
 	  											<li><h4><a href="/Prodotto/?key=${f:h(z.key)}">${f:h(e.nome)}</a></h4>
 										<ul>
-										<li> ${f:h(e.descr)}</li>
+										<li> ${f:h(e.descr_breve)}</li>
 										</ul>
 									</li>
 		</c:forEach>
@@ -123,7 +123,7 @@
 			<c:forEach var="s" items="${listInverno}">
 	  												<li><h4><a href="/Prodotto/?key=${f:h(z.key)}">${f:h(s.nome)}</a></h4>
 										<ul>
-										<li> ${f:h(s.descr)}</li>
+										<li> ${f:h(s.descr_breve)}</li>
 										</ul>
 									</li>
 		</c:forEach>

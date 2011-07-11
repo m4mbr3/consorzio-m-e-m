@@ -18,6 +18,10 @@ public class IndexController extends Controller {
                 p.setNome(asString("Nome"));
               if(asString("Descr")!=null)
                 p.setDescr(asString("Descr"));
+              
+              if(asString("Descr_bre")!=null)
+                  p.setDescr_breve(asString("Descr_bre"));
+              
               if(asInteger("Prezzo")!=null)
                   p.setPrezzo(asInteger("Prezzo"));
               if(asString("Unit")!=null)
@@ -39,7 +43,6 @@ public class IndexController extends Controller {
                   p.setEstate(true);
               else
                   p.setEstate(false);
-              
               if(asString("Primavera") == null) p.setPrimavera(false);
               else if(asString("Primavera").equals("on"))
                   p.setPrimavera(true);
