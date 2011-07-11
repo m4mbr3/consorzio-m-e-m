@@ -80,7 +80,7 @@
 	   <c:forEach var="z" items="${listTuttiProdotti}">
 									<li><h4><a href="/Upload/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
 										<ul>
-										<li> ${f:h(z.descr)}</li>
+										<li> ${f:h(z.descr_breve)}</li>
 										</ul>
 									</li>
 		</c:forEach>

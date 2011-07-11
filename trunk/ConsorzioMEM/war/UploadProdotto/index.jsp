@@ -86,6 +86,8 @@
 								<input type="text" id="Nome" name="Nome"  />		</p>
 				<p><label id="Descr_label">Descrizione</label>
 								<textarea id="Descr"  rows="15" cols="80" name="Descr" ></textarea></p>
+				<p><label id="Descr_breve_label">Breve Descrizione</label>
+								<textarea id="Descr" rows="15" cols="40" name="Descr_bre"></textarea></p>
 				<p><label id="Prezzo_label">Prezzo</label>
 								<input type="text" id="Prezzo" name="Prezzo" /></p>
 				<p><label id="Unit_label">Unità di misura </label>
