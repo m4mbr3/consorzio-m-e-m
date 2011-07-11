@@ -65,9 +65,8 @@
      <li id="menu3" onMouseOver="mostra('dieta');" onMouseOut="nascondi('dieta');"><a>Dieta</a>
       	<ul class="nav" id="dieta" style="display:none;">
       		<p>
-		      <li><a href="/Occasioni/">Tutti i produttori</a></li>
-		      <li><a href="/Regioni/">Regioni</a></li>
-		      <li><a href="/ObiettiviProblemi/">Problemi alimentari</a></li>
+		      <li><a href="/Occasioni/">Tutte le occasioni</a></li>
+		      <li><a href="/ObiettiviProblemi/">Obiettivi o Problemi alimentari</a></li>
 		    </p>
       	</ul>
       </li>
