@@ -22,19 +22,26 @@ public class IndexController extends Controller {
                   p.setPrezzo(asInteger("Prezzo"));
               if(asString("Unit")!=null)
                   p.setUMisura(asString("Unit"));
-              if(asString("Inverno").equals("on"))
+              if(asString("Inverno") == null) p.setInverno(false);
+              else if(asString("Inverno").equals("on"))
                   p.setInverno(true);
               else
                   p.setInverno(false);
-              if(asString("Autunno").equals("on"))
+              
+              if(asString("Autunno") == null) p.setAutunno(false);
+              else if(asString("Autunno").equals("on"))
                   p.setAutunno(true);
               else
                   p.setAutunno(false);
-              if(asString("Estate").equals("on"))
+             
+              if(asString("Estate") == null) p.setEstate(false);
+              else if(asString("Estate").equals("on"))
                   p.setEstate(true);
               else
                   p.setEstate(false);
-              if(asString("Primavera").equals("on"))
+              
+              if(asString("Primavera") == null) p.setPrimavera(false);
+              else if(asString("Primavera").equals("on"))
                   p.setPrimavera(true);
               else
                   p.setPrimavera(false);
