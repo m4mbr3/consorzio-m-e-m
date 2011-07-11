@@ -44,7 +44,7 @@ a:link {
 	text-decoration: underline; /* A meno che non vogliate personalizzare i collegamenti in un modo molto particolare, è bene applicare la sottolineatura per permetterne una rapida identificazione visiva. */
 }
 a:visited {
-	color: #6E6C64;
+	color: #42413C;
 	text-decoration: underline;
 }
 a:hover, a:active, a:focus { /* Questo gruppo di selettori conferisce alla navigazione tramite tastiera gli stessi effetti hover che si producono quando si usa il mouse. */

@@ -1,13 +1,11 @@
-<%@page pageEncoding="UTF-8" isELIgnored="false"%>
+<%@page pageEncoding="UTF-8" isELIgnored="false" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@taglib prefix="f" uri="http://www.slim3.org/functions"%>
-
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Ricette</title>
+<title>Stagioni</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
 
 <script type="text/javascript">
@@ -80,22 +78,77 @@
 
   </div>
   <div class="content">
-  <h3 class="titolo_tutti_prodotti">Tutte le ricette</h3>
-	  <ul>
-	   <c:forEach var="z" items="${list}">
-									<li><h4><a href="/Ricetta/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
+	  <div  class="disp"  id="Antipasto" >
+	  	<h3  class="h3left"> Antipasto </h3> 
+		<div id="icon_antipasto"><img src="/Antipasto.jpg" class="icon icon_right"  id="icon_antipasto" /></div>
+		 <ul>
+		 <c:forEach var="z" items="${listAntipasto}">
+	  				  				<li><h4><a href="/Ricetta/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
 										<ul>
 										<li> ${f:h(z.descr)}</li>
 										</ul>
 									</li>
 		</c:forEach>
 		</ul>
-</div>
+	  </div>
+	  <div  class="par"  id="Primo">
+	    <h3 class="h3right"> Primo </h3>
+		<div id="icon_primo"><img src="/Primo.jpg" class="icon icon_left"  id="icon_primo"/></div>
+		<ul style="text-align:right;">
+		<c:forEach var="p" items="${listPrimo}">
+								<li><h4><a href="/Ricetta/?key=${f:h(p.key)}">${f:h(p.nome)}</a></h4>
+										<ul>
+										<li> ${f:h(p.descr)}</li>
+										</ul>
+									</li>		</c:forEach>
+		</ul>
+	  </div>
+	  <div  class="disp"  id="Secondo">
+	  	<h3 class="h3left"> Secondo </h3>
+<div id="icon_secondo"> <img src="/Secondo.jpg" class="icon icon_right"  id="icon_secondo" /></div>
+	<ul>
+	<c:forEach var="e" items="${listSecondo}">
+	  											<li><h4><a href="/Ricetta/?key=${f:h(e.key)}">${f:h(e.nome)}</a></h4>
+										<ul>
+										<li> ${f:h(e.descr)}</li>
+										</ul>
+									</li>
+		</c:forEach>
+	</ul>
+	  </div>
+	  <div  class="par"  id="PiattoUnico">
+	  	<h3 class="h3right"> Piatto Unico</h3> 
+			<div id="icon_PiattoUnico"><img src="/PiattoUnico.jpg" class="icon icon_left"  id="icon_PiattoUnico" /></div>
+			<ul>
+			<c:forEach var="s" items="${listPiattoUnico}">
+	  												<li><h4><a href="/Ricetta/?key=${f:h(s.key)}">${f:h(s.nome)}</a></h4>
+										<ul>
+										<li> ${f:h(s.descr)}</li>
+										</ul>
+									</li>
+		</c:forEach>
+		</ul>
+	  </div>
+	   <div  class="disp"  id="Salse">
+	  	<h3 class="h3left"> Salse </h3>
+<div id="icon_salse"> <img src="/Salse.jpg" class="icon icon_right"  id="icon_salse" /></div>
+	<ul>
+	<c:forEach var="e" items="${listSalse}">
+	  											<li><h4><a href="/Ricetta/?key=${f:h(e.key)}">${f:h(e.nome)}</a></h4>
+										<ul>
+										<li> ${f:h(e.descr)}</li>
+										</ul>
+									</li>
+		</c:forEach>
+	</ul>
+	  </div>
+  </div>
   <div class="footer">
     <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
     <!-- end .footer -->
    </div>
   <!-- end .container -->
+  
   </div>
 </body>
 </html>

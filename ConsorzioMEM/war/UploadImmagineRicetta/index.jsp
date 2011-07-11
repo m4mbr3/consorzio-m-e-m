@@ -1,13 +1,11 @@
-<%@page pageEncoding="UTF-8" isELIgnored="false"%>
+<%@page pageEncoding="UTF-8" isELIgnored="false" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@taglib prefix="f" uri="http://www.slim3.org/functions"%>
-
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Ricette</title>
+<title>Selezione prodotto per caricamento immagini</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
 
 <script type="text/javascript">
@@ -27,7 +25,7 @@
 <body>
 
 <div class="container">
-  <div class="header">
+   <div class="header">
     <a href="/"><img src="/nature_banner_8-1.png" width="961" height="188" id="Insert_logo" style="background: #C6D580; display:block;" /></a>
   <!-- end .header --></div>
   
@@ -67,35 +65,33 @@
      <li id="menu3" onMouseOver="mostra('dieta');" onMouseOut="nascondi('dieta');"><a>Dieta</a>
       	<ul class="nav" id="dieta" style="display:none;">
       		<p>
-		      <li><a href="/Occasioni/">Tutte le occasioni</a></li>
-		      <li><a href="/ObiettiviProblemi/">Obiettivi o Problemi alimentari</a></li>
+		      <li><a href="/Occasioni/">Tutti i produttori</a></li>
+		      <li><a href="/Regioni/">Regioni</a></li>
+		      <li><a href="/ObiettiviProblemi/">Problemi alimentari</a></li>
 		    </p>
       	</ul>
       </li>
-      
-    
     </ul>
-
-
-
+	
   </div>
   <div class="content">
-  <h3 class="titolo_tutti_prodotti">Tutte le ricette</h3>
+	 <h2>Seleziona una ricetta di cui vuoi caricare le immagini</h2>
 	  <ul>
-	   <c:forEach var="z" items="${list}">
-									<li><h4><a href="/Ricetta/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
+	   <c:forEach var="z" items="${listTutteRicette}">
+									<li><h4><a href="/UploadImmagineRicetta/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
 										<ul>
 										<li> ${f:h(z.descr)}</li>
 										</ul>
 									</li>
 		</c:forEach>
 		</ul>
-</div>
+  </div>
   <div class="footer">
-    <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
+    <p> Sono le ore <%= new java.util.Date() %> .</p>
     <!-- end .footer -->
    </div>
   <!-- end .container -->
+  
   </div>
 </body>
 </html>

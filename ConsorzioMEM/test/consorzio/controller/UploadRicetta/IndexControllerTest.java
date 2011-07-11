@@ -1,18 +1,18 @@
-package consorzio.controller.Stagioni;
+package consorzio.controller.UploadRicetta;
 
 import org.slim3.tester.ControllerTestCase;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
-public class InvernoControllerTest extends ControllerTestCase {
+public class IndexControllerTest extends ControllerTestCase {
 
     @Test
     public void run() throws Exception {
-        tester.start("/Stagioni/Inverno");
-        InvernoController controller = tester.getController();
+        tester.start("/UploadRicetta/");
+        IndexController controller = tester.getController();
         assertThat(controller, is(notNullValue()));
         assertThat(tester.isRedirect(), is(false));
-        assertThat(tester.getDestinationPath(), is("/Stagioni/Inverno.jsp"));
+        assertThat(tester.getDestinationPath(), is("/UploadRicetta/index.jsp"));
     }
 }

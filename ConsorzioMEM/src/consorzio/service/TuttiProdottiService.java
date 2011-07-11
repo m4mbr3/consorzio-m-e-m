@@ -16,4 +16,9 @@ public class TuttiProdottiService {
         List<Prodotto> list = (List<Prodotto>) Datastore.query(p).asList();
         return list;
     }
+    public List<Prodotto> getProdotti()
+    {
+        List<Prodotto> list = (List<Prodotto>) Datastore.query(p).filter(p.key_ricetta.equal(null)).asList();
+        return list;
+    }
 }

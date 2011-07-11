@@ -1,9 +1,15 @@
-<!-- Indices written at Mon, 11 Jul 2011 14:39:09 UTC -->
+<!-- Indices written at Mon, 11 Jul 2011 21:55:51 UTC -->
 
 <datastore-indexes>
 
-    <!-- Used 57 times in query history -->
+    <!-- Used 4 times in query history -->
     <datastore-index kind="ImmagineFragment" ancestor="false" source="auto">
+        <property name="uploadDataRef" direction="asc"/>
+        <property name="index" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 6 times in query history -->
+    <datastore-index kind="ImmagineRicetteFragment" ancestor="false" source="auto">
         <property name="uploadDataRef" direction="asc"/>
         <property name="index" direction="asc"/>
     </datastore-index>
