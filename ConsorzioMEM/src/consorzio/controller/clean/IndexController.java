@@ -27,7 +27,7 @@ public class IndexController extends Controller {
             Datastore.delete(p.getKey());
             Datastore.put(s);
           
-            return forward("index.jsp");
+            return forward("/");
             
         }
         else{
