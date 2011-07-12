@@ -104,7 +104,7 @@
 
 </div>
   <div class="footer">
-  		<p><div><b> Ti trovi in -->  Home</b> </div><div ALIGN=CENTER><p> <b>
+  		<div>&nbsp;<b> Ti trovi in -->  Home</b> </div><div ALIGN=CENTER><p> <b>
   	<script type="text/javascript">
  <!--
   var data = new Date();
@@ -118,7 +118,7 @@
   document.write("Sono le ore " + Hh + Mm + Ss+ " E' il giorno " + giorno + mese + anno);
  //-->
 </script></p> </b></div>
-</p>
+
     <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
     <!-- end .footer -->
    </div>
