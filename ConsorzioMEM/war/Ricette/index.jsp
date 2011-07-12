@@ -91,10 +91,10 @@
   </div>
   <div class="content">
   <h3 class="titolo_tutti_prodotti">Tutte le ricette</h3>
-	  <ul>
+	  <ul style="list-style: none;">
 	   <c:forEach var="z" items="${list}">
 									<li><h4><a href="/Ricetta/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(z.descr)}</li>
 										</ul>
 									</li>

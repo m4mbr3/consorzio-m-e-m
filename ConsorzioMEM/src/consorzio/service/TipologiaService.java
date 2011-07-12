@@ -25,7 +25,7 @@ private RicettaMeta r = RicettaMeta.get();
         else if(tipo.equals("PiattoUnico"))
             list = (List<Ricetta>) Datastore.query(r).sort(r.nome.asc).filter(r.categoria.equal("PiattoUnico")).asList();
         else
-            list = (List<Ricetta>) Datastore.query(r).sort(r.nome.asc).filter(r.categoria.equal("Salse")).asList();
+            list = (List<Ricetta>) Datastore.query(r).sort(r.nome.asc).filter(r.categoria.equal("Salsa")).asList();
         
         return list;
     }
