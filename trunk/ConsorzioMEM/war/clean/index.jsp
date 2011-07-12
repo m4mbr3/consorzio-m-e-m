@@ -7,8 +7,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Consorzio MEM</title>
+<title>Ricette</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
+
 <script type="text/javascript">
  
  function nascondi(id){
@@ -20,7 +21,6 @@
  }
  
 </script>
-
 <link href="css/home.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -46,7 +46,7 @@
       <li id="menu2" onMouseOver="mostra('ricette');" onMouseOut="nascondi('ricette');"><a>Ricette</a>
       	<ul class="nav" id="ricette" style="display:none;">
 		     <p>
-		      <li><a href="/Ricette/">Tutte le ricette</a></li>
+		      <li><a href="/Ricette/">Tutte</a></li>
 		      <li><a href="/Tipologia/">Tipologia</a></li>
 		      <li><strike><a href="/SpecialNeeds/">Bisogni Specifici</a></strike></li>
 		     </p>
@@ -83,29 +83,27 @@
     <li><a href="/Upload/">Aggiungi Immagine Prodotto</a></li>
     <li><a href="/UploadRicetta/">Aggiungi Ricetta</a></li>
     <li><a href="/UploadImmagineRicetta/">Aggiungi Immagine Ricetta</a></li>
-    <li><a href="/clean/">Eliminazione Ricette</a></li>
+    
     </ul>
 
 
 
   </div>
   <div class="content">
-  
-<p>  Benvenuto in Consorizio M E M, il portale dei piccoli e medi produttori di alimenti biologici (verdura, frutta, carne, prodotti dietetici, pane) e anche altri prodotti come pasta, marmellata, the, caffè, bevande, zucchero, miele, cioccolato….</p>
-<p style="text-align:center;"><img src="/organic-food.jpg"></p>
-<p>Realizzato da Andrea Mambretti, Elio Ermini e Luca Muccignato per il progetto di Applicazioni Ipermediali nel periodo Maggio-Luglio dell'anno accademico 2010/2011.</p>
-<p>L'applicazione Web è stata sviluppata sulla piattaforma Google App Engine, sfrutta le tecnologie Java Server Pages, Java, Javascript, XHTML, CSS seguendo il paradigma MVC2 del framework Slim3, ottenendo quindi una forte separazione tra il livello View, la logica di Business e il database.</p>
-<p>Seguendo l'apposito link è possibile popolare il datastore BigTable a piacimento con nuovi prodotti e ricette. </p>
-<p>Il lavoro in team è stato reso possibile grazie all'utilizzo di SVN ospitato su Google.code</p>
-<p>Si può quindi visionare il codice sorgente direttamente online alla pagina:
-<a href="http://code.google.com/p/consorzio-m-e-m/source/browse/">code.google.com/p/consorzio-m-e-m/source/</a></p>
-
-<p>Buon divertimento e tornate a visitarci presto per rimanere aggiornati sugli ultimi prodotti e ricette!</p>
-
+  <h3 class="titolo_tutti_prodotti">Seleziona la ricetta da eliminare</h3>
+	  <ul>
+	   <c:forEach var="z" items="${Elementi}">
+									<li><h4><a href="/clean/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
+										<ul>
+										<li> ${f:h(z.descr)}</li>
+										</ul>
+									</li>
+		</c:forEach>
+		</ul>
 </div>
   <div class="footer">
-  		<div>&nbsp;<b> Ti trovi in -->  Home</b> </div><div ALIGN=CENTER><p> <b>
-  	<script type="text/javascript">
+  	<h4> Ti trovi in -->  Home </h4>
+  <p>	<script type="text/javascript">
  <!--
   var data = new Date();
   var Hh, Mm, Ss, giorno,mese, anno;
@@ -117,8 +115,8 @@
   Ss = data.getSeconds() ;
   document.write("Sono le ore " + Hh + Mm + Ss+ " E' il giorno " + giorno + mese + anno);
  //-->
-</script></p> </b></div>
-
+</script>
+</p>
     <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
     <!-- end .footer -->
    </div>
