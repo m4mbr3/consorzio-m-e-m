@@ -1,4 +1,4 @@
-<!-- Indices written at Tue, 12 Jul 2011 01:27:07 UTC -->
+<!-- Indices written at Tue, 12 Jul 2011 02:31:40 UTC -->
 
 <datastore-indexes>
 
@@ -8,10 +8,16 @@
         <property name="index" direction="asc"/>
     </datastore-index>
 
-    <!-- Used 13 times in query history -->
+    <!-- Used 21 times in query history -->
     <datastore-index kind="ImmagineRicetteFragment" ancestor="false" source="auto">
         <property name="uploadDataRef" direction="asc"/>
         <property name="index" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="Prodotto" ancestor="false" source="auto">
+        <property name="key_ricetta" direction="asc"/>
+        <property name="Nome" direction="asc"/>
     </datastore-index>
 
 </datastore-indexes>

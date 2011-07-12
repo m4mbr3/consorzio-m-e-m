@@ -124,7 +124,8 @@
 			 <p>${f:h(Ricetta.min_prep)}</p>
 			 <h3>Ricetta Per  Persone </h3>
 			 <p>${f:h(Ricetta.x_num_persone)}</p>
-
+			 <h3>Prodotto Principale Correlato</h3>
+			 <p><a href="/Prodotto/?key=${f:h(Prodotto.key)}" title="${f:h(Prodotto.nome)}">${f:h(Prodotto.nome)}</a><p>
 		
 </div>
   <div class="footer">

@@ -102,8 +102,10 @@
 				<p><h3> Prezzo:  <h5>${f:h(Prodotto.prezzo)}  ${f:h(Prodotto.UMisura)}</h5></h3></p>
 		    <h3> Stagioni</h3>
 		    
-			 
-		
+			 <h3> Categoria </h3>
+			 <p> ${f:h(Prodotto.categoria)}</p>
+			 <h3> Ricette correlate </h3>
+			 <p><a href="/Ricetta/?key=${f:h(Ricetta.key)}" title="${f:h(Ricetta.nome)}">${f:h(Ricetta.nome)}</a></p>
 
 		
 </div>

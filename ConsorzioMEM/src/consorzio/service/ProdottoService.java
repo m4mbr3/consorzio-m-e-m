@@ -18,6 +18,8 @@ public class ProdottoService {
     private ProdottoMeta p = ProdottoMeta.get();
     private ImmagineMeta i = ImmagineMeta.get();
     private UploadService service = new UploadService();
+    
+    
     public Prodotto getProdotto(Key key)
     {
         Prodotto prodotto = Datastore.query(p).filter(p.key.equal(key)).asSingle();
