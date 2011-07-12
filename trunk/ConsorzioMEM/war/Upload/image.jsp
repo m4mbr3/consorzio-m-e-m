@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Caricamento immagine Per il prodotto</title>
+<title>Consorzio MEM</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
 
 <script type="text/javascript">
@@ -100,8 +100,8 @@
 				  		
   </div>
  <div class="footer">
-  	<h4> Ti trovi in -->  Home </h4>
-  <p>	<script type="text/javascript">
+  		<div>&nbsp;<b> Ti trovi in -->  Caricamento immagine Per il prodotto</b> </div><div ALIGN=CENTER><p> <b>
+  	<script type="text/javascript">
  <!--
   var data = new Date();
   var Hh, Mm, Ss, giorno,mese, anno;
@@ -113,8 +113,8 @@
   Ss = data.getSeconds() ;
   document.write("Sono le ore " + Hh + Mm + Ss+ " E' il giorno " + giorno + mese + anno);
  //-->
-</script>
-</p>
+</script></p> </b></div>
+
     <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
     <!-- end .footer -->
    </div>
