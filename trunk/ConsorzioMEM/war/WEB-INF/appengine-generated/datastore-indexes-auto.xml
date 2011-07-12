@@ -1,4 +1,4 @@
-<!-- Indices written at Tue, 12 Jul 2011 04:10:17 UTC -->
+<!-- Indices written at Tue, 12 Jul 2011 04:38:07 UTC -->
 
 <datastore-indexes>
 
@@ -18,6 +18,12 @@
     <datastore-index kind="Prodotto" ancestor="false" source="auto">
         <property name="key_ricetta" direction="asc"/>
         <property name="Nome" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 5 times in query history -->
+    <datastore-index kind="Ricetta" ancestor="false" source="auto">
+        <property name="categoria" direction="asc"/>
+        <property name="nome" direction="asc"/>
     </datastore-index>
 
 </datastore-indexes>

@@ -105,6 +105,7 @@
 	    <h3 class="h3right"> Estate </h3>
 		<div id="icon_estate"><img src="/estate.jpg" class="icon icon_left"  id="icon_estate"/></div>
 		<ul style="list-style: none;">
+
 		<c:forEach var="p" items="${listEstate}">
 								<li><h4><a href="/Prodotto/?key=${f:h(p.key)}">${f:h(p.nome)}</a></h4>
 										<ul style="list-style: none;">
