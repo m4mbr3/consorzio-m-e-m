@@ -107,6 +107,9 @@
   		
 			<h3> Ricetta </h3>	
 			 <p> ${f:h(Ricetta.ricetta)}</p>
+			<h3>  </h3>	
+			 <p> ${f:h(Ricetta.ricetta)}</p>
+			  
 				<h3>Categoria </h3>
 			 <p>${f:h(Ricetta.categoria)}</p>
 			 <h3>Difficoltà </h3>

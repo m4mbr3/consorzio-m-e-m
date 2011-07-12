@@ -93,11 +93,17 @@
   				<h2> Carica una Ricetta!!!</h2>
 				<form method="post" action="/UploadRicetta/">
 				<p><label id="Nome_label">Nome</label> 
-								<input type="text" id="Nome" name="Nome"  />		</p>
+								<p><input type="text" id="Nome" name="Nome"  />		</p></p>
 				<p><label id="Ricetta_label">Ricetta</label>
-								<textarea id="Ricetta"  rows="15" cols="80" name="Ricetta" ></textarea></p>
+								<p><textarea id="Ricetta"  rows="15" cols="80" name="Ricetta" ></textarea></p></p>
+				<p><label id="Ingredienti_label">Ingredienti</label>
+								<p><textarea id="ingredienti"  rows="15" cols="80" name="ingredienti" ></textarea></p></p>
+				<p><label id="Pre_label">Preparazione</label>
+								<p><textarea id="preparazione"  rows="15" cols="80" name="preparazione" ></textarea></p></p>
+				<p><label id="Consigli_label">Consigli</label>
+								<p><textarea id="consigli"  rows="15" cols="80" name="consigli" ></textarea></p></p>
 				<p><label id="Descr_label">Descrizione</label>
-								<textarea id="Descr" rows="15" cols="40" name="Descr"></textarea></p>
+								<p><textarea id="Descr" rows="15" cols="40" name="Descr"></textarea></p></p>
 				<p><label id="Categoria_label">Categoria </label>
 								<select id="Categoria"  name="Categoria">
 								<option>Antipasto</option>

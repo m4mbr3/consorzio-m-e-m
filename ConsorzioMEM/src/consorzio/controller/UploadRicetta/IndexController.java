@@ -25,6 +25,12 @@ public class IndexController extends Controller {
                 r.setNome(asString("Nome"));
               if(asString("Descr")!=null)
                 r.setDescr(asString("Descr"));
+              if(asString("ingredienti")!= null)
+                  r.setIngredienti(asString("ingredienti"));
+              if(asString("preparazione")!= null)
+                  r.setPreparazione(asString("preparazione"));
+              if(asString("consigli")!= null)
+                  r.setConsigli(asString("consigli"));
               
               if(asString("Categoria")!=null)
                   r.setCategoria(asString("Categoria"));

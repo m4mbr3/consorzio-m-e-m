@@ -33,10 +33,43 @@ public class Ricetta implements Serializable {
         this.nome = nome;
     }
 
+    @Attribute (lob = true)
+    private String ingredienti;
+    
+    @Attribute (lob = true)
+    private String preparazione;
+    
+    @Attribute (lob = true)
+    private String consigli;
+    
+    public String getIngredienti() {
+        return ingredienti;
+    }
+
+    public void setIngredienti(String ingredienti) {
+        this.ingredienti = ingredienti;
+    }
+
+    public String getPreparazione() {
+        return preparazione;
+    }
+
+    public void setPreparazione(String preparazione) {
+        this.preparazione = preparazione;
+    }
+
+    public String getConsigli() {
+        return consigli;
+    }
+
+    public void setConsigli(String consigli) {
+        this.consigli = consigli;
+    }
+
     @Attribute 
     private String categoria;
     
-    @Attribute
+    @Attribute (lob = true)
     private String ricetta;
 
     public String getRicetta() {
@@ -55,7 +88,7 @@ public class Ricetta implements Serializable {
         this.descr = descr;
     }
 
-    @Attribute
+    @Attribute (lob = true)
     private String descr;
 
    
