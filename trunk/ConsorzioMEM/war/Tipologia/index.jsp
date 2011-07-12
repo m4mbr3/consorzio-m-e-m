@@ -104,7 +104,7 @@
 	  <div  class="par"  id="Primo">
 	    <h3 class="h3right"> Primo </h3>
 		<div id="icon_primo"><img src="/Primo.jpg" class="icon icon_left"  id="icon_primo"/></div>
-		<ul style="text-align:right;">
+		<ul style="list-style: none; text-align:right;">
 		<c:forEach var="p" items="${listPrimo}">
 								<li><h4><a href="/Ricetta/?key=${f:h(p.key)}">${f:h(p.nome)}</a></h4>
 										<ul style="list-style: none;">

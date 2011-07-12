@@ -8,7 +8,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Consorzio MEM</title>
-<link rel="stylesheet" type="text/css" href="/css/home.css" />
 <script type="text/javascript">
  
  function nascondi(id){
@@ -20,8 +19,7 @@
  }
  
 </script>
-
-<link href="css/home.css" rel="stylesheet" type="text/css">
+<link href="css/home-mobile.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>

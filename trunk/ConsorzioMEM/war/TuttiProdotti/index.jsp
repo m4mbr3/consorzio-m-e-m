@@ -91,10 +91,10 @@
   </div>
   <div class="content">
   <h3 class="titolo_tutti_prodotti">Tutti i prodotti</h3>
-	  <ul>
+	  <ul style="list-style: none;">
 	   <c:forEach var="z" items="${listTuttiProdotti}">
 									<li><h4><a href="/Prodotto/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(z.descr_breve)}</li>
 										</ul>
 									</li>

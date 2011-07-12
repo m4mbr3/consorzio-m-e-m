@@ -12,7 +12,7 @@ public class IndexController extends Controller {
         requestScope("listPrimo", (new TipologiaService()).getRicettaXTipo("Primo"));
         requestScope("listSecondo", (new TipologiaService()).getRicettaXTipo("Secondo"));
         requestScope("listAntipasto", (new TipologiaService()).getRicettaXTipo("Antipasto"));
-        requestScope("listSalse", (new TipologiaService()).getRicettaXTipo("Salse"));
+        requestScope("listSalse", (new TipologiaService()).getRicettaXTipo("Salsa"));
         requestScope("listPiattoUnico", (new TipologiaService()).getRicettaXTipo("PiattoUnico"));
         return forward("index.jsp");
     }
