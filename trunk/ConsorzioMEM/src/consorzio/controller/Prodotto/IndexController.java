@@ -21,6 +21,26 @@ public class IndexController extends Controller {
        if(p.getKey_ricetta()!= null)
         if(sevi.getRicetta(p.getKey_ricetta())!= null)
             requestScope("Ricetta",sevi.getRicetta(p.getKey_ricetta()));
+        if(p.getAutunno())
+            requestScope("Autunno",new String("Autunno"));
+        else
+            requestScope("Autunno",null);
+
+        if(p.getEstate())
+            requestScope("Estate",new String("Estate"));
+        else
+            requestScope("Estate",null);
+        
+        if(p.getInverno())
+            requestScope("Inverno",new String("Inverno"));
+        else
+            requestScope("Inverno",null);
+        
+        if(p.getPrimavera())
+            requestScope("Primavera",new String("Primavera"));
+        else
+            requestScope("Primavera",null);
+        
         requestScope("Prodotto", p);
         requestScope("NumeroImmagini",service.getNumeroImmagini(asKey("key")));
         requestScope("ListaImmagini",service.getListaImmagini(asKey("key")));

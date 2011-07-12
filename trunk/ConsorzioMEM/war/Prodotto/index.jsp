@@ -113,8 +113,11 @@
 			<p> ${f:h(Prodotto.curio)}</p>
 			
 				<p><h3> Prezzo:  <h5>${f:h(Prodotto.prezzo)}  ${f:h(Prodotto.UMisura)}</h5></h3></p>
-		    <h3> Stagioni</h3>
-		    
+		     <h3> Stagioni</h3>
+		     <p>${f:h(Autunno)}</p>
+		     <p>${f:h(Inverno)}</p>
+		     <p>${f:h(Primavera)}</p>
+		     <p>${f:h(Estate)}</p>
 			 <h3> Categoria </h3>
 			 <p> ${f:h(Prodotto.categoria)}</p>
 			 <h3> Ricette correlate </h3>
