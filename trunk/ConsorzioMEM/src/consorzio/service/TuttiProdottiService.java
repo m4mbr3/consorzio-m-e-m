@@ -13,12 +13,12 @@ public class TuttiProdottiService {
     
     public List<Prodotto> getTuttiProdotti()
     {
-        List<Prodotto> list = (List<Prodotto>) Datastore.query(p).asList();
+        List<Prodotto> list = (List<Prodotto>) Datastore.query(p).sort(p.Nome.asc).asList();
         return list;
     }
     public List<Prodotto> getProdotti()
     {
-        List<Prodotto> list = (List<Prodotto>) Datastore.query(p).filter(p.key_ricetta.equal(null)).asList();
+        List<Prodotto> list = (List<Prodotto>) Datastore.query(p).sort(p.Nome.asc).filter(p.key_ricetta.equal(null)).asList();
         return list;
     }
 }

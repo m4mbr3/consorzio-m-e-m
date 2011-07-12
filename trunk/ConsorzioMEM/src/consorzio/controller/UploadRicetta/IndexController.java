@@ -57,7 +57,7 @@ public class IndexController extends Controller {
               p.setKey_ricetta(s.getKey());
               Datastore.put(p);
             } 
-            return forward("/");
+            return forward("index.jsp");
        } 
         else
         {

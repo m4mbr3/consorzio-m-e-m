@@ -15,7 +15,7 @@ public class TutteRicetteService {
     
     public List<Ricetta> getTutteRicette()
     {
-        List<Ricetta> list = (List<Ricetta>) Datastore.query(r).asList();
+        List<Ricetta> list = (List<Ricetta>) Datastore.query(r).sort(r.nome.asc).asList();
         return list;
     }
     
