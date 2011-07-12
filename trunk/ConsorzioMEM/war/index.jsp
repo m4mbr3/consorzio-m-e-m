@@ -72,7 +72,7 @@
       	</ul>
       </li>
     <li><a href="/Info/">Info Generali</a></li>
-    <li><strike><a href="/Consorzio/">Info Produzione</a></strike></li>
+    <li><strike><a href="/InfoProduzione/">Info Produzione</a></strike></li>
     <li><strike><a href="/Consorzio/">Consorzio</a></strike></li>
     <li><a href="/Contatti/">Contatti</a></li>
     </ul>

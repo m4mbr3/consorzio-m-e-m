@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Tutti i prodotti</title>
+<title>Consorzio MEM</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
 
 <script type="text/javascript">
@@ -31,7 +31,7 @@
     <a href="/"><img src="/nature_banner_8-1.png" width="961" height="188" id="Insert_logo" style="background: #C6D580; display:block;" /></a>
   <!-- end .header --></div>
   
-  <div class="sidebar1">
+   <div class="sidebar1">
     <ul class="nav">
     	  <li><a href="/">Home Page </a></li>
       <li id="menu1" onMouseOver="mostra('prodotti');" onMouseOut="nascondi('prodotti');"><a>Prodotti</a>
@@ -46,7 +46,7 @@
       <li id="menu2" onMouseOver="mostra('ricette');" onMouseOut="nascondi('ricette');"><a>Ricette</a>
       	<ul class="nav" id="ricette" style="display:none;">
 		     <p>
-		      <li><a href="/Ricette/">Tutte</a></li>
+		      <li><a href="/Ricette/">Tutte le ricette</a></li>
 		      <li><a href="/Tipologia/">Tipologia</a></li>
 		      <li><strike><a href="/SpecialNeeds/">Bisogni Specifici</a></strike></li>
 		     </p>
@@ -72,7 +72,7 @@
       	</ul>
       </li>
     <li><a href="/Info/">Info Generali</a></li>
-    <li><strike><a href="/Consorzio/">Info Produzione</a></strike></li>
+    <li><strike><a href="/InfoProduzione/">Info Produzione</a></strike></li>
     <li><strike><a href="/Consorzio/">Consorzio</a></strike></li>
     <li><a href="/Contatti/">Contatti</a></li>
     </ul>
@@ -101,9 +101,9 @@
 		</c:forEach>
 		</ul>
 </div>
-  <div class="footer">
-  	<h4> Ti trovi in -->  Home </h4>
-  <p>	<script type="text/javascript">
+ <div class="footer">
+  		<div>&nbsp;<b> Ti trovi in -->  Prodotti --> Tutti i prodotti</b> </div><div ALIGN=CENTER><p> <b>
+  	<script type="text/javascript">
  <!--
   var data = new Date();
   var Hh, Mm, Ss, giorno,mese, anno;
@@ -115,8 +115,8 @@
   Ss = data.getSeconds() ;
   document.write("Sono le ore " + Hh + Mm + Ss+ " E' il giorno " + giorno + mese + anno);
  //-->
-</script>
-</p>
+</script></p> </b></div>
+
     <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
     <!-- end .footer -->
    </div>
