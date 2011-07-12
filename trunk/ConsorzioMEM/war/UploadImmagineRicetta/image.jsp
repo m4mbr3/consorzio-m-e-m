@@ -91,7 +91,7 @@
 	 <h3>Selezionare le immagini da caricare per la Ricetta <u>${f:h(Ricetta.nome)}<u></h3>
 	 <form action="/UploadImmagineRicetta/upload" method="post" enctype="multipart/form-data">
 	 <p><label id="formFile_label" > <input type="file" name="formFile" /></label></p>
-	 <p> <label id="descr_label">Descrizione Immagine <textarea id="Descr" name="Descr" col="100" rows="10"></textarea></label></p>
+	 <p> <label id="descr_label">Descrizione Immagine</label></p><p> <textarea id="Descr" name="Descr" col="100" rows="10"></textarea></label></p>
 	 <input type="hidden" name="key" value="${f:h(Ricetta.key)}">
 	 <p><input type="submit" value="Upload"><p>
 	 </form>
