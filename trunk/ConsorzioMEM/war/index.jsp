@@ -46,7 +46,7 @@
       <li id="menu2" onMouseOver="mostra('ricette');" onMouseOut="nascondi('ricette');"><a>Ricette</a>
       	<ul class="nav" id="ricette" style="display:none;">
 		     <p>
-		      <li><a href="/Ricette/">Tutte</a></li>
+		      <li><a href="/Ricette/">Tutte le ricette</a></li>
 		      <li><a href="/Tipologia/">Tipologia</a></li>
 		      <li><strike><a href="/SpecialNeeds/">Bisogni Specifici</a></strike></li>
 		     </p>
@@ -104,8 +104,8 @@
 
 </div>
   <div class="footer">
-  	<h4> Ti trovi in -->  Home </h4>
-  <p>	<script type="text/javascript">
+  		<p><div><b> Ti trovi in -->  Home</b> </div><div ALIGN=CENTER><p> <b>
+  	<script type="text/javascript">
  <!--
   var data = new Date();
   var Hh, Mm, Ss, giorno,mese, anno;
@@ -117,7 +117,7 @@
   Ss = data.getSeconds() ;
   document.write("Sono le ore " + Hh + Mm + Ss+ " E' il giorno " + giorno + mese + anno);
  //-->
-</script>
+</script></p> </b></div>
 </p>
     <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
     <!-- end .footer -->
