@@ -92,7 +92,7 @@
   <div class="content">
   
 <p>  Benvenuto in Consorizio M E M, il portale dei piccoli e medi produttori di alimenti biologici (verdura, frutta, carne, prodotti dietetici, pane) e anche altri prodotti come pasta, marmellata, the, caffè, bevande, zucchero, miele, cioccolato….</p>
-<p style="text-align:center;"><img src="/396px-Vegetarian_diet.jpg"></p>
+<p style="text-align:center;"><img src="/organic-food.jpg"></p>
 <p>Realizzato da Andrea Mambretti, Elio Ermini e Luca Muccignato per il progetto di Applicazioni Ipermediali nel periodo Maggio-Luglio dell'anno accademico 2010/2011.</p>
 <p>L'applicazione Web è stata sviluppata sulla piattaforma Google App Engine, sfrutta le tecnologie Java Server Pages, Java, Javascript, XHTML, CSS seguendo il paradigma MVC2 del framework Slim3, ottenendo quindi una forte separazione tra il livello View, la logica di Business e il database.</p>
 <p>Seguendo l'apposito link è possibile popolare il datastore BigTable a piacimento con nuovi prodotti e ricette. </p>
