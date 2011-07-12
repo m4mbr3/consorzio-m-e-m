@@ -91,10 +91,10 @@
 	  <div  class="disp"  id="Antipasto" >
 	  	<h3  class="h3left"> Antipasto </h3> 
 		<div id="icon_antipasto"><img src="/Antipasto.jpg" class="icon icon_right"  id="icon_antipasto" /></div>
-		 <ul>
+		 <ul style="list-style: none;">
 		 <c:forEach var="z" items="${listAntipasto}">
 	  				  				<li><h4><a href="/Ricetta/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(z.descr)}</li>
 										</ul>
 									</li>
@@ -107,7 +107,7 @@
 		<ul style="text-align:right;">
 		<c:forEach var="p" items="${listPrimo}">
 								<li><h4><a href="/Ricetta/?key=${f:h(p.key)}">${f:h(p.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(p.descr)}</li>
 										</ul>
 									</li>		</c:forEach>
@@ -116,10 +116,10 @@
 	  <div  class="disp"  id="Secondo">
 	  	<h3 class="h3left"> Secondo </h3>
 <div id="icon_secondo"> <img src="/Secondo.jpg" class="icon icon_right"  id="icon_secondo" /></div>
-	<ul>
+	<ul style="list-style: none;">
 	<c:forEach var="e" items="${listSecondo}">
 	  											<li><h4><a href="/Ricetta/?key=${f:h(e.key)}">${f:h(e.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(e.descr)}</li>
 										</ul>
 									</li>
@@ -129,10 +129,10 @@
 	  <div  class="par"  id="PiattoUnico">
 	  	<h3 class="h3right"> Piatto Unico</h3> 
 			<div id="icon_PiattoUnico"><img src="/PiattoUnico.jpg" class="icon icon_left"  id="icon_PiattoUnico" /></div>
-			<ul>
+			<ul style="list-style: none;">
 			<c:forEach var="s" items="${listPiattoUnico}">
 	  												<li><h4><a href="/Ricetta/?key=${f:h(s.key)}">${f:h(s.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(s.descr)}</li>
 										</ul>
 									</li>
@@ -142,10 +142,10 @@
 	   <div  class="disp"  id="Salse">
 	  	<h3 class="h3left"> Salse </h3>
 <div id="icon_salse"> <img src="/Salse.jpg" class="icon icon_right"  id="icon_salse" /></div>
-	<ul>
+	<ul style="list-style: none;">
 	<c:forEach var="w" items="${listSalse}">
 	  											<li><h4><a href="/Ricetta/?key=${f:h(w.key)}">${f:h(w.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(w.descr)}</li>
 										</ul>
 									</li>
