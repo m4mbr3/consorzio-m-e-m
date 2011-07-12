@@ -12,7 +12,7 @@ import consorzio.service.UploadImmagineService;
 import consorzio.service.UploadService;
 
 public class UploadController extends Controller {
-    private UploadImmagineService service = new UploadImmagineService();
+    private UploadService service = new UploadService();
     @Override
     public Navigation run() throws Exception {
         FileItem formFile = requestScope("formFile");
