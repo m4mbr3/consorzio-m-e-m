@@ -15,7 +15,7 @@ public class IndexController extends Controller {
     @Override
     public Navigation run() throws Exception {
  
-      
+        
         requestScope("Prodotto", service.getProdotto(asKey("key")));
         requestScope("NumeroImmagini",service.getNumeroImmagini(asKey("key")));
         requestScope("ListaImmagini",service.getListaImmagini(asKey("key")));

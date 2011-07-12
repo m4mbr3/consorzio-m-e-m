@@ -28,11 +28,40 @@ public class Prodotto implements Serializable {
     public static long getSerialversionuid() {
         return serialVersionUID;
     }
-
     @Attribute
+    private String Categoria;
+    public String getCategoria() {
+        return Categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        Categoria = categoria;
+    }
+    @Attribute(lob = true)
     private  String Descr;
     
-    @Attribute
+    @Attribute(lob = true)
+    private  String Colt;
+    
+    @Attribute(lob = true)
+    private  String Curio;
+    
+    public String getColt() {
+        return Colt;
+    }
+
+    public void setColt(String colt) {
+        Colt = colt;
+    }
+
+    public String getCurio() {
+        return Curio;
+    }
+
+    public void setCurio(String curio) {
+        Curio = curio;
+    }
+    @Attribute (lob = true)
     private String Descr_breve;
     
     public String getDescr_breve() {
@@ -59,8 +88,11 @@ public class Prodotto implements Serializable {
     private String Nome;
     
    
-    private int Prezzo;
+    private float Prezzo;
     
+    public void setPrezzo(float prezzo) {
+        Prezzo = prezzo;
+    }
     private String UMisura;
     
     private Boolean Autunno;
@@ -163,7 +195,7 @@ public class Prodotto implements Serializable {
         Prezzo = prezzo;
     }
 
-    public int getPrezzo() {
+    public float getPrezzo() {
         return Prezzo;
     }
 
