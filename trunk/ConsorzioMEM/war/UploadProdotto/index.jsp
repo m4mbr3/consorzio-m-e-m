@@ -33,46 +33,56 @@
   
   <div class="sidebar1">
     <ul class="nav">
-          <li><a href="/Info/">Bio</a></li>
+    	  <li><a href="/">Home Page </a></li>
       <li id="menu1" onMouseOver="mostra('prodotti');" onMouseOut="nascondi('prodotti');"><a>Prodotti</a>
-      	
 	      	<ul class="nav" id="prodotti" style="display:none;">
 			      <p>
 			      <li><a href="/TuttiProdotti/">Tutti i prodotti</a></li>
 			      <li><a href="/Stagioni/">Stagioni</a></li>
-			      <li><a href="/Categorie/">Categorie</a></li>
+			      <li><strike><a href="/Categorie/">Categorie</a></strike></li>
 			      </p>
 	      	</ul>
-      
       </li>
       <li id="menu2" onMouseOver="mostra('ricette');" onMouseOut="nascondi('ricette');"><a>Ricette</a>
       	<ul class="nav" id="ricette" style="display:none;">
 		     <p>
 		      <li><a href="/Ricette/">Tutte</a></li>
-		      <li><a href="/Occasioni/">Occasioni</a></li>
-		      <li><a href="/SpecialNeeds/">Bisogni Specifici</a></li>
+		      <li><a href="/Tipologia/">Tipologia</a></li>
+		      <li><strike><a href="/SpecialNeeds/">Bisogni Specifici</a></strike></li>
 		     </p>
       	</ul>
       </li>
-      <li><a href="/Mesi/">Offerte</a></li>
-      <li><a href="/Consorzio/" >Consorzio</a></li>
-      <li id="menu3" onMouseOver="mostra('produttori');" onMouseOut="nascondi('produttori');"><a>Produttori</a>
+      
+       <li id="menu3" onMouseOver="mostra('dieta');" onMouseOut="nascondi('dieta');"><strike><a>Dieta</a></strike>
+      	<ul class="nav" id="dieta" style="display:none;">
+      		<p>
+		      <li><strike><a href="/Occasioni/">Tutte le occasioni</a></strike></li>
+		      <li><strike><a href="/ObiettiviProblemi/">Obiettivi o Problemi alimentari</a></strike></li>
+		    </p>
+      	</ul>
+      </li>
+      <li><strike><a href="/Mesi/">Le Nostre Offerte</a></strike></li>
+      
+      <li id="menu3" onMouseOver="mostra('produttori');" onMouseOut="nascondi('produttori');"><strike><a>Produttori</a></strike>
       	<ul class="nav" id="produttori" style="display:none;">
 		      <p>
-		      <li><a href="/Produttori/">Tutti i produttori</a></li>
-		      <li><a href="/Regioni/">Regioni</a></li>
+		      <li><strike><a href="/Produttori/">Tutti i produttori</a></strike></li>
+		      <li><strike><a href="/Regioni/">Regioni</a></strike></li>
 		      </p>
       	</ul>
       </li>
-     <li id="menu3" onMouseOver="mostra('dieta');" onMouseOut="nascondi('dieta');"><a>Dieta</a>
-      	<ul class="nav" id="dieta" style="display:none;">
-      		<p>
-		      <li><a href="/Occasioni/">Tutti i produttori</a></li>
-		      <li><a href="/Regioni/">Regioni</a></li>
-		      <li><a href="/ObiettiviProblemi/">Problemi alimentari</a></li>
-		    </p>
-      	</ul> 	      </li>
-      
+    <li><a href="/Info/">Info Generali</a></li>
+    <li><strike><a href="/Consorzio/">Info Produzione</a></strike></li>
+    <li><strike><a href="/Consorzio/">Consorzio</a></strike></li>
+    <li><a href="/Contatti/">Contatti</a></li>
+    </ul>
+    <br />
+    <h3>Admin Area</h3>
+    <ul class="nav">
+    <li><a href="/UploadProdotto/">Aggiungi Prodotto</a></li>
+    <li><a href="/Upload/">Aggiungi Immagine Prodotto</a></li>
+    <li><a href="/UploadRicetta/">Aggiungi Ricetta</a></li>
+    <li><a href="/UploadImmagineRicetta/">Aggiungi Immagine Ricetta</a></li>
     
     </ul>
 
@@ -84,10 +94,15 @@
 				<form method="post" action="/UploadProdotto/">
 				<p><label id="Nome_label">Nome</label> 
 								<input type="text" id="Nome" name="Nome"  />		</p>
-				<p><label id="Descr_label">Descrizione</label>
-								<textarea id="Descr"  rows="15" cols="80" name="Descr" ></textarea></p>
-				<p><label id="Descr_breve_label">Breve Descrizione</label>
-								<textarea id="Descr" rows="15" cols="40" name="Descr_bre"></textarea></p>
+				<p><label id="Descr_breve_label">Breve Descrizione</label></p>
+								<p><textarea id="Descr" rows="15" cols="40" name="Descr_bre"></textarea></p>
+				<p><label id="Descr_label">Descrizione</label></p>
+								<p><textarea id="Descr"  rows="15" cols="80" name="Descr" ></textarea></p>
+				<p><label id="Colt_label">Coltivazione</label></p>
+								<p><textarea id="Colt"  rows="15" cols="80" name="Colt" ></textarea></p>
+				<p><label id="Curio_label">Curiosità</label></p>
+								<p><textarea id="Curio"  rows="15" cols="80" name="Curio" ></textarea></p>
+				
 				<p><label id="Prezzo_label">Prezzo</label>
 								<input type="text" id="Prezzo" name="Prezzo" /></p>
 				<p><label id="Unit_label">Unità di misura </label>
@@ -95,6 +110,14 @@
 								<option>Euro/Kg</option>
 				  				<option>Euro/g</option>
 			  					<option>Euro/lt</option>
+								</select></p>
+				<p><label id="Uni_label">Categoria </label>
+								<select id="Categoria"  name="Categoria">
+								<option>Frutto</option>
+								<option>Legume</option>
+								<option>Ortaggio</option>
+								<option>Spezia</option>
+			  					<option>Tubero</option>
 								</select></p>
 				<p><label id="Autunno_label">Autunno</label>
 								<input type="checkbox" id="Autunno"  name="Autunno"/></p>			
@@ -109,7 +132,22 @@
 				</form>
 </div>
   <div class="footer">
-    <p> Sono le ore <%= new java.util.Date() %> .</p>
+  	<h4> Ti trovi in -->  Home </h4>
+  <p>	<script type="text/javascript">
+ <!--
+  var data = new Date();
+  var Hh, Mm, Ss, giorno,mese, anno;
+  giorno = data.getDate()+ "/" ;
+  mese = data.getMonth()+1+ "/";
+  anno = data.getFullYear();
+  Hh = data.getHours() + ":";
+  Mm = data.getMinutes() + ":";
+  Ss = data.getSeconds() ;
+  document.write("Sono le ore " + Hh + Mm + Ss+ " E' il giorno " + giorno + mese + anno);
+ //-->
+</script>
+</p>
+    <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
     <!-- end .footer -->
    </div>
   <!-- end .container -->

@@ -92,9 +92,17 @@
 			</c:forEach>
 </p>
   		
-			<h3> Descrizione Prodotto</h3>	
+			<h3> Descrizione Prodotto</h3>	 
 			 <p> ${f:h(Prodotto.descr)}</p>
+			<h3> Coltivazione</h3>
+			<p> ${f:h(Prodotto.colt)}</p>
+			<h3> Curiostità</h3>
+			<p> ${f:h(Prodotto.curio)}</p>
+			
 				<p><h3> Prezzo:  <h5>${f:h(Prodotto.prezzo)}  ${f:h(Prodotto.UMisura)}</h5></h3></p>
+		    <h3> Stagioni</h3>
+		    
+			 
 		
 
 		

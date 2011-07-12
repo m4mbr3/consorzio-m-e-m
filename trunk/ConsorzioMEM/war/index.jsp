@@ -47,7 +47,7 @@
       	<ul class="nav" id="ricette" style="display:none;">
 		     <p>
 		      <li><a href="/Ricette/">Tutte</a></li>
-		      <li><a href="/Tipologie/">Tipologie</a></li>
+		      <li><a href="/Tipologia/">Tipologia</a></li>
 		      <li><strike><a href="/SpecialNeeds/">Bisogni Specifici</a></strike></li>
 		     </p>
       	</ul>

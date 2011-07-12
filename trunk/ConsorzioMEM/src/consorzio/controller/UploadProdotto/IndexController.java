@@ -18,12 +18,18 @@ public class IndexController extends Controller {
                 p.setNome(asString("Nome"));
               if(asString("Descr")!=null)
                 p.setDescr(asString("Descr"));
+              if(asString("Colt")!=null)
+                  p.setColt(asString("Colt"));
+              if(asString("Curio")!=null)
+                  p.setCurio(asString("Curio"));
+              if(asString("Categoria")!=null)
+                  p.setCategoria(asString("Categoria"));
               
               if(asString("Descr_bre")!=null)
                   p.setDescr_breve(asString("Descr_bre"));
               
-              if(asInteger("Prezzo")!=null)
-                  p.setPrezzo(asInteger("Prezzo"));
+              if(asFloat("Prezzo")!=null)
+                  p.setPrezzo(asFloat("Prezzo"));
               if(asString("Unit")!=null)
                   p.setUMisura(asString("Unit"));
               if(asString("Inverno") == null) p.setInverno(false);
