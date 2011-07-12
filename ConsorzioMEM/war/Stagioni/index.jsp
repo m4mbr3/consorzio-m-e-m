@@ -91,10 +91,10 @@
 	  <div  class="disp"  id="primavera" >
 	  	<h3  class="h3left"> Primavera </h3> 
 		<div id="icon_primavera"><img src="/primavera.jpg" class="icon icon_right"  id="icon_primavera" /></div>
-		 <ul>
+		 <ul style="list-style: none;">
 		 <c:forEach var="z" items="${listPrimavera}">
 	  				  				<li><h4><a href="/Prodotto/?key=${f:h(z.key)}">${f:h(z.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(z.descr_breve)}</li>
 										</ul>
 									</li>
@@ -104,10 +104,10 @@
 	  <div  class="par"  id="estate">
 	    <h3 class="h3right"> Estate </h3>
 		<div id="icon_estate"><img src="/estate.jpg" class="icon icon_left"  id="icon_estate"/></div>
-		<ul style="text-align:right;">
+		<ul style="text-align:right;" style="list-style: none;">
 		<c:forEach var="p" items="${listEstate}">
 								<li><h4><a href="/Prodotto/?key=${f:h(p.key)}">${f:h(p.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(p.descr_breve)}</li>
 										</ul>
 									</li>		</c:forEach>
@@ -116,10 +116,10 @@
 	  <div  class="disp"  id="autunno">
 	  	<h3 class="h3left"> Autunno </h3>
 <div id="icon_autunno"> <img src="/autunno.jpg" class="icon icon_right"  id="icon_autunno" /></div>
-	<ul>
+	<ul style="list-style: none;">
 	<c:forEach var="e" items="${listAutunno}">
 	  											<li><h4><a href="/Prodotto/?key=${f:h(e.key)}">${f:h(e.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(e.descr_breve)}</li>
 										</ul>
 									</li>
@@ -129,10 +129,10 @@
 	  <div  class="par"  id="inverno">
 	  	<h3 class="h3right"> Inverno </h3> 
 			<div id="icon_inverno"><img src="/Inverno.jpg" class="icon icon_left"  id="icon_inverno" /></div>
-			<ul>
+			<ul style="list-style: none;">
 			<c:forEach var="s" items="${listInverno}">
 	  												<li><h4><a href="/Prodotto/?key=${f:h(s.key)}">${f:h(s.nome)}</a></h4>
-										<ul>
+										<ul style="list-style: none;">
 										<li> ${f:h(s.descr_breve)}</li>
 										</ul>
 									</li>
