@@ -143,10 +143,10 @@
 	  	<h3 class="h3left"> Salse </h3>
 <div id="icon_salse"> <img src="/Salse.jpg" class="icon icon_right"  id="icon_salse" /></div>
 	<ul>
-	<c:forEach var="e" items="${listSalse}">
-	  											<li><h4><a href="/Ricetta/?key=${f:h(e.key)}">${f:h(e.nome)}</a></h4>
+	<c:forEach var="w" items="${listSalse}">
+	  											<li><h4><a href="/Ricetta/?key=${f:h(w.key)}">${f:h(w.nome)}</a></h4>
 										<ul>
-										<li> ${f:h(e.descr)}</li>
+										<li> ${f:h(w.descr)}</li>
 										</ul>
 									</li>
 		</c:forEach>

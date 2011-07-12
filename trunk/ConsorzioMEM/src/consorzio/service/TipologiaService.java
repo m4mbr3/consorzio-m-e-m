@@ -17,15 +17,15 @@ private RicettaMeta r = RicettaMeta.get();
     {
         List<Ricetta> list;
         if(tipo.equals("Primo"))
-            list = (List<Ricetta>) Datastore.query(r).filter(r.categoria.equal("Primo")).asList();
+            list = (List<Ricetta>) Datastore.query(r).sort(r.nome.asc).filter(r.categoria.equal("Primo")).asList();
         else if(tipo.equals("Secondo"))
-            list = (List<Ricetta>) Datastore.query(r).filter(r.categoria.equal("Secondo")).asList();
+            list = (List<Ricetta>) Datastore.query(r).sort(r.nome.asc).filter(r.categoria.equal("Secondo")).asList();
         else if(tipo.equals("Antipasto"))
-            list = (List<Ricetta>) Datastore.query(r).filter(r.categoria.equal("Antipasto")).asList();
+            list = (List<Ricetta>) Datastore.query(r).sort(r.nome.asc).filter(r.categoria.equal("Antipasto")).asList();
         else if(tipo.equals("PiattoUnico"))
-            list = (List<Ricetta>) Datastore.query(r).filter(r.categoria.equal("PiattoUnico")).asList();
+            list = (List<Ricetta>) Datastore.query(r).sort(r.nome.asc).filter(r.categoria.equal("PiattoUnico")).asList();
         else
-            list = (List<Ricetta>) Datastore.query(r).filter(r.categoria.equal("Salse")).asList();
+            list = (List<Ricetta>) Datastore.query(r).sort(r.nome.asc).filter(r.categoria.equal("Salse")).asList();
         
         return list;
     }
