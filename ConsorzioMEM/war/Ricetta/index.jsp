@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Prodotti</title>
+<title>Consorzio MEM</title>
 <link rel="stylesheet" type="text/css" href="/css/home.css" />
 <script type="text/javascript" src="/css/Js/prototype.js"></script>
 <script type="text/javascript" src="/css/Js/scriptaculous.js?load=effects,builder"></script>
@@ -49,7 +49,7 @@
       <li id="menu2" onMouseOver="mostra('ricette');" onMouseOut="nascondi('ricette');"><a>Ricette</a>
       	<ul class="nav" id="ricette" style="display:none;">
 		     <p>
-		      <li><a href="/Ricette/">Tutte</a></li>
+		      <li><a href="/Ricette/">Tutte le ricette</a></li>
 		      <li><a href="/Tipologia/">Tipologia</a></li>
 		      <li><strike><a href="/SpecialNeeds/">Bisogni Specifici</a></strike></li>
 		     </p>
@@ -75,7 +75,7 @@
       	</ul>
       </li>
     <li><a href="/Info/">Info Generali</a></li>
-    <li><strike><a href="/Consorzio/">Info Produzione</a></strike></li>
+    <li><strike><a href="/InfoProduzione/">Info Produzione</a></strike></li>
     <li><strike><a href="/Consorzio/">Consorzio</a></strike></li>
     <li><a href="/Contatti/">Contatti</a></li>
     </ul>
@@ -128,8 +128,23 @@
 			 <p><a href="/Prodotto/?key=${f:h(Prodotto.key)}" title="${f:h(Prodotto.nome)}">${f:h(Prodotto.nome)}</a><p>
 		
 </div>
-  <div class="footer">
-    <p> Sono le ore <%= new java.util.Date() %> .</p>
+ <div class="footer">
+  		<div>&nbsp;<b> Ti trovi in -->  Tutte le ricette --> Ricetta</b> </div><div ALIGN=CENTER><p> <b>
+  	<script type="text/javascript">
+ <!--
+  var data = new Date();
+  var Hh, Mm, Ss, giorno,mese, anno;
+  giorno = data.getDate()+ "/" ;
+  mese = data.getMonth()+1+ "/";
+  anno = data.getFullYear();
+  Hh = data.getHours() + ":";
+  Mm = data.getMinutes() + ":";
+  Ss = data.getSeconds() ;
+  document.write("Sono le ore " + Hh + Mm + Ss+ " E' il giorno " + giorno + mese + anno);
+ //-->
+</script></p> </b></div>
+
+    <p> Progetto di Applicazioni Ipermediali 2011 di Andrea Mambretti - Elio Ermini - Luca Muccignato </p>
     <!-- end .footer -->
    </div>
   <!-- end .container -->

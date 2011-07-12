@@ -104,8 +104,8 @@
 
 </div>
   <div class="footer">
-  	<h4> Ti trovi in -->  Home </h4>
-  <p>	<script type="text/javascript">
+  	<p><h4> Ti trovi in -->  Home 
+  	<script type="text/javascript">
  <!--
   var data = new Date();
   var Hh, Mm, Ss, giorno,mese, anno;
@@ -117,7 +117,7 @@
   Ss = data.getSeconds() ;
   document.write("Sono le ore " + Hh + Mm + Ss+ " E' il giorno " + giorno + mese + anno);
  //-->
-</script>
+</script> </h4>
 </p>
     <p> AIP 2011 Mambretti - Ermini - Muccignato </p>
     <!-- end .footer -->
