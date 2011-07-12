@@ -91,7 +91,8 @@
 	 <h3>Selezionare le immagini da caricare per il prodotto <u>${f:h(Prodotto.nome)}<u></h3>
 	 <form action="/Upload/upload" method="post" enctype="multipart/form-data">
 	 <p><label id="formFile_label" > <input type="file" name="formFile" /></label></p>
-	 <p> <label id="descr_label">Descrizione Immagine <textarea id="Descr" name="Descr" col="100" rows="10"></textarea></label></p>
+	 <p><label id="descr_label">Descrizione Immagine</label></p> 
+	  	<p><textarea id="Descr" name="Descr" col="100" rows="10"></textarea></p>
 	 <input type="hidden" name="key" value="${f:h(Prodotto.key)}">
 	 <p><input type="submit" value="Upload"><p>
 	 </form>

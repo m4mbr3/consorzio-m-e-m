@@ -107,9 +107,13 @@
   		
 			<h3> Ricetta </h3>	
 			 <p> ${f:h(Ricetta.ricetta)}</p>
-			<h3>  </h3>	
-			 <p> ${f:h(Ricetta.ricetta)}</p>
-			  
+			<h3>Ingredienti  </h3>	
+			 <p> ${f:h(Ricetta.ingredienti)}</p>
+			  <h3> Preparazione </h3>	
+			 <p> ${f:h(Ricetta.preparazione)}</p>
+			 <h3> Consigli </h3>	
+			 <p> ${f:h(Ricetta.consigli)}</p>
+			 
 				<h3>Categoria </h3>
 			 <p>${f:h(Ricetta.categoria)}</p>
 			 <h3>Difficoltà </h3>
@@ -118,8 +122,8 @@
 			 <p>${f:h(Ricetta.min_cott)}</p>
 			 <h3>Minuti Per la Preparazione </h3>
 			 <p>${f:h(Ricetta.min_prep)}</p>
-			 <h3>Ricetta Per ${f:h(Ricetta.x_num_persone)} Persone </h3>
-			 
+			 <h3>Ricetta Per  Persone </h3>
+			 <p>${f:h(Ricetta.x_num_persone)}</p>
 
 		
 </div>
