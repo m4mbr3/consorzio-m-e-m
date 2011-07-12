@@ -13,4 +13,4 @@ qua c'è la password che serve per gestire il repository:
 
 https://code.google.com/hosting/settings
 
-L'ID dell'applicazione quando fate il deploy to appEngine é: consorziomem
+L'ID dell'applicazione quando fate il deploy to appEngine é: am-ee-lm-aip2011
